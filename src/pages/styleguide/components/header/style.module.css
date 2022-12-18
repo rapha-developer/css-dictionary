@@ -1,0 +1,13 @@
+.header {
+    padding-block: var(--spc__scale-27) var(--spc__scale-28);
+}
+.text__secondary {
+    margin-bottom: var(--spc__scale-6);
+}
+.text__primary {
+    margin-bottom: var(--spc__scale-4);
+}
+.text__tertiary {
+    --max__width: 600px;
+    max-width: var(--max__width);
+}
