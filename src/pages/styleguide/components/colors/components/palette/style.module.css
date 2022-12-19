@@ -1,0 +1,9 @@
+.palette__collection {
+    --gap: var(--spc__scale-8);
+    --min__width: 250px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--min__width), 1fr));
+    gap: var(--gap);
+    padding: var(--spc__scale-16) var(--spc__scale-12);
+    border-radius: 8px;
+}
