@@ -7,3 +7,10 @@
     padding: var(--spc__scale-16) var(--spc__scale-12);
     border-radius: 8px;
 }
+@media screen and (max-width: 600px) {
+    .palette__collection {
+        --gap: var(--spc__scale-12) var(--spc__scale-8);
+        --min__width: calc(100% - 2rem);
+        padding: var(--spc__scale-8) var(--spc__scale-6);
+    }
+}
