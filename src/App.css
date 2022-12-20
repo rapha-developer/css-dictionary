@@ -108,6 +108,8 @@ img {
   --spc__scale-18: calc(var(--space__base) * 18);
   --spc__scale-19: calc(var(--space__base) * 19);
   --spc__scale-20: calc(var(--space__base) * 20);
+  --spc__scale-25: calc(var(--space__base) * 25);
+  --spc__scale-26: calc(var(--space__base) * 26);
   --spc__scale-27: calc(var(--space__base) * 27);
   --spc__scale-28: calc(var(--space__base) * 28);
   --spc__scale-29: calc(var(--space__base) * 29);
