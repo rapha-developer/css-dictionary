@@ -4,7 +4,11 @@ const createStyleHeader = {
         text__primary: "color styles",
         text__tertiary: "Welcome to the style guide. This page is the focal point for stylistic changes to this product. If you have any questions regarding this product , write to us at our mail hello@unisense.agency"
     },
-    typography: {},
+    typography: {
+        text__secondary: "style guide",
+        text__primary: "typography styles",
+        text__tertiary: "Welcome to the style guide. This page is the focal point for stylistic changes to this product. If you have any questions regarding this product , write to us at our mail hello@unisense.agency"
+    },
     boxShadows: {},
     elements: {}
 
