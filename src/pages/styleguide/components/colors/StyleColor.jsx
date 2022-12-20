@@ -2,16 +2,17 @@ import UiHeading from "../../../../components/ui/heading/UiHeading"
 import UiPaletteCollection from "./components/palette/UiPaletteCollection"
 
 import styles from './style.module.css'
-function StyleColor() {
+function StyleColor({text__primary, text__secondary, palette}) {
     return (
         <section className={styles.styleColor}>
             <div className="container">
                 <UiHeading 
-                    text__primary="primary colors"
-                    text__secondary="These are the main colors of the product that are used in various Ui
-                    elements."
+                    text__primary={text__primary}
+                    text__secondary={text__secondary}
                 />
-                <UiPaletteCollection />
+                <UiPaletteCollection 
+                    palette={palette}
+                />
             </div>
         </section>
     )
