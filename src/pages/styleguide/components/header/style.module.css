@@ -1,5 +1,6 @@
 .header {
     padding-block: var(--spc__scale-27) var(--spc__scale-28);
+    margin-bottom: var(--spc__scale-26);
 }
 .text__secondary {
     margin-bottom: var(--spc__scale-6);
