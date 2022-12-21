@@ -1,0 +1,26 @@
+.headings__collection {
+    border-radius: 8px;
+    padding: var(--spc__scale-16) var(--spc__scale-12);
+    --gap: var(--spc__scale-20);
+    display: grid;
+    gap: var(--gap);
+}
+.heading__item {
+    display: grid;
+    --gap: 12px;
+    gap: var(--gap);
+
+}
+@media screen and (min-width: 768px) {
+    .headings__collection {
+        --gap: var(--spc__scale-13);
+    }
+    .heading__item {
+        display: grid;
+        --min__width: 300px;
+        --gap: 25px;
+        grid-template-columns: auto 1fr;
+        gap: var(--gap);
+        align-items: baseline;
+    }
+}
