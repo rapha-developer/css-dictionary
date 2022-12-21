@@ -7,7 +7,7 @@ import StyleTypographyPage from './pages/typography/StyleTypographyPage'
 function StylePage() {
     return (
         <div className="stylePage">
-            <StyleColorPage />
+            <StyleTypographyPage />
         </div> 
     )
 }
