@@ -116,6 +116,16 @@ img {
 
   --box-shadow-1: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;;
 }
+@media screen and (max-width: 768px) {
+  :root {
+    --fs__scale--h1: 48px;
+    --fs__scale--h2: 40px;
+    --fs__scale--h3: 32px;
+    --fs__scale--h4: 28px;
+    --fs__scale--h5: 26px;
+    --fs__scale--h6: 24px;
+  }
+}
 .bg-primary-100 {
   background: hsla(var(--bg__primary--100));
 }
