@@ -1,0 +1,11 @@
+.sidebar {
+    --max__width: 250px;
+    background-color: var(--bg__primary--400);
+    padding: var(--spc__scale-4) var(--spc__scale-2);
+    max-width: var(--max__width);
+    height: 100vh;
+}
+.sidebar__head {
+    display: grid;
+    place-content: center;
+}
