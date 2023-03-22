@@ -9,3 +9,7 @@
     display: grid;
     place-content: center;
 }
+.sidebar__body {
+    padding: var(--spc__scale-6) var(--spc__scale-4);
+    background: hsl(var(--bg__primary--400));
+}
