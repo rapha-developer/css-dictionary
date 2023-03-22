@@ -119,7 +119,46 @@ const createStyleColor = {
         ]
     }
 }
+const createFirstAccordionData = [
+    {
+        url: "#",
+        name: "design",
+        iconColor: "blue",
+    },
+    {
+        url: "#",
+        name: "development",
+        iconColor: "green",
+    },
+    {
+        url: "#",
+        name: "music",
+        iconColor: "orange",
+    },
+    {
+        url: "#",
+        name: "video",
+        iconColor: "red",
+    },
+]
+const createFirstSidebarGroupData = {
+    title: "pages",
+    options: [
+        {
+            name: "Recent materials",
+            url: "#",
+            iconType: "clock",
+        },
+        {
+            name: "favorites",
+            url: "#",
+            iconType: "heart",
+        },
+    ]
+}
 export {
     createStyleHeader,
-    createStyleColor
+    createStyleColor,
+    createFirstAccordionData,
+    createFirstSidebarGroupData
 }
