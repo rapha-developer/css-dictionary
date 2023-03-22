@@ -1,0 +1,19 @@
+.__item,
+.__link {
+    display: flex;
+    align-items: center;
+    gap: var(--spc__scale-3);
+    padding: var(--space__base);
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__text--300));
+}
+.__item:hover {
+    background: hsla(var(--clr__text--300) / 0.06);
+}
+.__icon {
+    width: 21px;
+    height: 21px;
+    color: hsl(var(--bg__primary--100));
+}
