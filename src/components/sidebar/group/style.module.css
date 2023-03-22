@@ -1,0 +1,16 @@
+.sidebar__group {
+    padding-inline: var(--spc__scale-2);
+    padding-bottom: var(--spc__scale-4);
+}
+.first__heading {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p3);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__text--300));
+    letter-spacing: 1px;
+    margin-bottom: var(--spc__scale-4);
+}
+.first__list {
+    display: grid;
+    gap: var(--spc__scale-4);
+}
