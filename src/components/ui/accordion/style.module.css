@@ -1,0 +1,38 @@
+.accordionButton {
+    width: 100%;
+    background: hsl(var(--bg__primary--300));
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__medium);
+    color: hsla(var(--clr__text--300));
+    padding: var(--spc__scale-4) var(--spc__scale-4) var(--spc__scale-4);
+    border: none;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    gap: var(--spc__scale-2);
+}
+.accordion__LabelIcon {
+    width: 20px;
+    height: 20px;
+    color: hsl(var(--clr__text--400));
+}
+.accordion__iconRight {
+    margin-left: auto;
+}
+.accordionContent {
+    padding: 0 0 0;
+    background: hsl(var(--bg__primary--300));
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in;
+}
+.accordionButton[aria-selected="true"] + .accordionContent {
+    max-height: 500px;
+}
+.accordionMenuList {
+    padding-inline: var(--spc__scale-4);
+    padding-bottom: var(--spc__scale-3);
+}
