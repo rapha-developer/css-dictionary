@@ -1,6 +1,9 @@
+.accordion {
+    margin-bottom: var(--spc__scale-2);
+}
 .accordionButton {
     width: 100%;
-    background: hsl(var(--bg__primary--300));
+    background: hsl(var(--bg__primary--400));
     font-family: var(--ff__inter, sans-serif);
     font-size: var(--fs__small--p2);
     font-weight: var(--fw__medium);
@@ -10,9 +13,12 @@
     text-align: left;
     outline: none;
     cursor: pointer;
-    transition: 0.4s;
+    transition: all 0.2s ease-in;
     display: flex;
     gap: var(--spc__scale-2);
+}
+.accordionButton[aria-selected="true"] {
+    background: hsl(var(--bg__primary--300));
 }
 .accordion__LabelIcon {
     width: 20px;
