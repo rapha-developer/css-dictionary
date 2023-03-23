@@ -29,3 +29,6 @@
 .accordionCircleIcon[data-color="red"] {
     color: hsl(var(--clr__primary--400));
 }
+.accordionCircleIcon[data-color="gray"] {
+    color: hsl(var(--bg__primary--100));
+}
