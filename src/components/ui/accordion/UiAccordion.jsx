@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import { VscCircle } from 'react-icons/vsc'
-import { HiOutlineSquaresPlus, HiOutlineChevronDown } from 'react-icons/hi2'
+import { AiFillTag } from 'react-icons/ai'
+import { HiOutlineSquaresPlus, HiOutlineChevronDown, HiOutlineChevronUp } from 'react-icons/hi2'
 
 import styles from './style.module.css'
 import UiAccordionItem from './item/UiAccordionItem'
 function UiAccordion(props) {
-    const uiAccordionTitle =  props?.head || "categories"
+    const uiAccordionTitle =  props?.title || "categories"
+    
     const [isActive, setIsActive] = useState(false)
     function changeVisibility() {
         setIsActive((prevState) => !prevState)
@@ -18,16 +19,25 @@ function UiAccordion(props) {
                 url={item.url}
                 iconColor={item.iconColor}
                 name={item.name}
+                format={(props?.format) ? props.format : 'capitalize'}
             />
         )
     });
+    function defineAccordionHeadIcon() {
+        return (props.iconMain === "tags") ? <AiFillTag className={styles.accordion__LabelIcon} /> : <HiOutlineSquaresPlus className={styles.accordion__LabelIcon} />
+    }
+    function defineArrowIcon() {
+        return (isActive) ? <HiOutlineChevronUp className={`${styles.accordion__LabelIcon} ${styles.accordion__iconRight}`} /> : <HiOutlineChevronDown className={`${styles.accordion__LabelIcon} ${styles.accordion__iconRight}`}/>
+    }
+    const uiAccordionIcon = defineAccordionHeadIcon()
+    const uiAccordionArrow = defineArrowIcon()
     return (
-    <div className="accordion">
+    <div className={styles.accordion}>
         <button className={`${styles.accordionButton} capitalize`}
         aria-selected={isActive}
         aria-controls='accordion-list'
         onClick={changeVisibility}>
-            <HiOutlineSquaresPlus className={styles.accordion__LabelIcon} /> {uiAccordionTitle} <HiOutlineChevronDown className={`${styles.accordion__LabelIcon} ${styles.accordion__iconRight}`} />
+            {uiAccordionIcon} {uiAccordionTitle} {uiAccordionArrow}
         </button>
         <div className={styles.accordionContent}
             data-visible={isActive} id="accordion-list">
