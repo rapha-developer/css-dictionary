@@ -119,6 +119,21 @@ const createStyleColor = {
         ]
     }
 }
+const createFirstSidebarGroupData = {
+    title: "pages",
+    options: [
+        {
+            name: "Recent materials",
+            url: "#",
+            iconType: "clock",
+        },
+        {
+            name: "favorites",
+            url: "#",
+            iconType: "heart",
+        },
+    ]
+}
 const createFirstAccordionData = [
     {
         url: "#",
@@ -141,24 +156,22 @@ const createFirstAccordionData = [
         iconColor: "red",
     },
 ]
-const createFirstSidebarGroupData = {
-    title: "pages",
-    options: [
-        {
-            name: "Recent materials",
-            url: "#",
-            iconType: "clock",
-        },
-        {
-            name: "favorites",
-            url: "#",
-            iconType: "heart",
-        },
-    ]
-}
+const createSecondAccordionData = [
+    {
+        url: "#",
+        name: "#unisense",
+        iconColor: "gray",
+    },
+    {
+        url: "#",
+        name: "#development",
+        iconColor: "gray",
+    },
+]
 export {
     createStyleHeader,
     createStyleColor,
+    createFirstSidebarGroupData,
     createFirstAccordionData,
-    createFirstSidebarGroupData
+    createSecondAccordionData
 }
