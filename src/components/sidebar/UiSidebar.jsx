@@ -1,8 +1,9 @@
 import boxboardLogo from '../../assets/boxboard-logo.svg'
 import styles from './style.module.css'
 import UiAccordion from '../ui/accordion/UiAccordion'
-import { createFirstAccordionData, createFirstSidebarGroupData } from '../../data/constants'
+import { createFirstAccordionData, createFirstSidebarGroupData, createSecondAccordionData } from '../../data/constants'
 import UiSidebarGroup from './group/UiSidebarGroup'
+import UiSidebarSingleItem from './single-item/UiSidebarSingleItem'
 function UiSidebar() {
     return (
         <div className={styles.sidebar}>
@@ -17,6 +18,17 @@ function UiSidebar() {
                 />
                 <UiAccordion 
                     items={createFirstAccordionData}
+                />
+                <UiAccordion
+                    title="my tags"
+                    iconMain="tags"
+                    format="lowercase"
+                    items={createSecondAccordionData}
+                />
+                <UiSidebarSingleItem 
+                    url="#"
+                    iconType="archive"
+                    name="archive"
                 />
             </div>
         </div>
