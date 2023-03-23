@@ -11,9 +11,10 @@
 }
 .__item:hover {
     background: hsla(var(--clr__text--300) / 0.06);
+    cursor: pointer;
 }
 .__icon {
-    width: 21px;
-    height: 21px;
+    width: 20px;
+    height: 20px;
     color: hsl(var(--bg__primary--100));
 }
