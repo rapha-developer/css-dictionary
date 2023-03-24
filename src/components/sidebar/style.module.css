@@ -4,6 +4,7 @@
     padding: var(--spc__scale-4) var(--spc__scale-2);
     max-width: var(--max__width);
     height: 100vh;
+    border-right: 3px solid hsl(var(--bg__primary--300));
 }
 .sidebar__head {
     display: grid;
