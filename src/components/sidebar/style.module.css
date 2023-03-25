@@ -14,3 +14,12 @@
     padding: var(--spc__scale-6) var(--spc__scale-4);
     background: hsl(var(--bg__primary--400));
 }
+.sidebar__tail {
+    height: 330px;
+    display: grid;
+    align-items: end;
+}
+.sidebar__image {
+    width: min(100%, 220px);
+    height: 260px;
+}
