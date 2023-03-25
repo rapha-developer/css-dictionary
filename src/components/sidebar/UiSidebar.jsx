@@ -4,6 +4,7 @@ import UiAccordion from '../ui/accordion/UiAccordion'
 import { createFirstAccordionData, createFirstSidebarGroupData, createSecondAccordionData } from '../../data/constants'
 import UiSidebarGroup from './group/UiSidebarGroup'
 import UiSidebarSingleItem from './single-item/UiSidebarSingleItem'
+import SmartphoneWithGraphics from '../../assets/smartphone-with-graphics.png'
 function UiSidebar() {
     return (
         <div className={styles.sidebar}>
@@ -29,6 +30,12 @@ function UiSidebar() {
                     url="#"
                     iconType="archive"
                     name="archive"
+                />
+            </div>
+            <div className={styles.sidebar__tail}>
+                <img src={SmartphoneWithGraphics} 
+                    alt="Illustration of a Smartphone with nice graphics." 
+                    className={styles.sidebar__image}
                 />
             </div>
         </div>
