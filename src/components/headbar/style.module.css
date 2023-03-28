@@ -4,10 +4,6 @@
 }
 .__row {
     display: flex;
-    /* border: 2px solid red; */
-
-}
-.__row > * {
 }
 .__head {
     --gap: 54px;
