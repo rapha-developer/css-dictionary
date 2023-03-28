@@ -25,11 +25,20 @@ p,
 span,
 button,
 form,
+input,
+label,
 a {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+  border: none;
+}
+button:focus,
+input:focus,
+label:focus {
+  border: none;
+  outline: none;
 }
 img {
   max-width: 100%;
