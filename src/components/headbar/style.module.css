@@ -1,0 +1,58 @@
+.headBar {
+    padding: var(--spc__scale-6) var(--spc__scale-8);
+    /* border: 2px solid red; */
+}
+.__row {
+    display: flex;
+    /* border: 2px solid red; */
+
+}
+.__row > * {
+}
+.__head {
+    --gap: 54px;
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    width: 100%;
+}
+.__headline {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__scale--h6);
+    font-weight: var(--fw__semiBold);
+    color: hsl(var(--clr__text--100));
+}
+.__body {
+    --gap: 40px;
+    display: flex;
+    gap: var(--gap);
+}
+.__button {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p1);
+    font-weight: var(--fw__semiBold);
+    background: hsl(var(--clr__primary--100));
+    color: hsl(var(--bg__primary--400));
+    padding: var(--spc__scale-2) var(--spc__scale-5);
+    border-radius: 16px;
+    --gap: var(--space__base);
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.__button:focus,
+.__button:active {
+    box-shadow: inset 5px 5px 10px -3px hsla(var(--clr__text--100) / 0.7);
+}
+.__ButtonIcon {
+    font-size: var(--fs__body--p2);
+}
+.__gravatar {
+    width: 50px;
+    height: 50px;
+}
+.__gravatar img {
+    border-radius: 50%;
+}
