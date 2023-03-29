@@ -1,6 +1,5 @@
 .headBar {
     padding: var(--spc__scale-6) var(--spc__scale-8);
-    /* border: 2px solid red; */
 }
 .__row {
     display: flex;
