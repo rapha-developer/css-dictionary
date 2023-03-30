@@ -1,253 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
-body,
-main,
-div,
-header,
-aside,
-footer,
-nav,
-ul,
-li,
-ol,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-button,
-form,
-input,
-label,
-a {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  border: none;
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
-button:focus,
-input:focus,
-label:focus {
-  border: none;
-  outline: none;
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
-img {
-  max-width: 100%;
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
-:root {
-  --clr__primary--100: 227 100% 68%; /* #5B7FFF */
-  --clr__primary--200: 153 59% 51%;  /* #38CB89 */
-  --clr__primary--300:  40 100% 50%; /* #FFAB00 */
-  --clr__primary--400:  11 100% 59%; /* #Ff5630 */
 
-  --clr__secondary--100: 218 100% 94%; /* #E1ECFF */
-  --clr__secondary--200: 155  49% 93%; /* #E5F6EF */
-  --clr__secondary--300:  26  80% 96%; /* #FDF4ED */
-  --clr__secondary--400:  12 100% 94%; /* #FFE6E0 */
-  --clr__secondary--500: 218 100% 98%; /* #F4F8FF */
-  --clr__secondary--600: 154  54% 97%; /* #F5FCF9 */
-  --clr__secondary--700:  43 100% 97%; /* #FFFBF1 */
-  --clr__secondary--800:  11 100% 98%; /* #FFF6F4 */
-
-
-  --clr__text--100: 218 20% 25%; /* #323B4B */
-  --clr__text--200: 219 21% 39%; /* #4E5D78 */
-  --clr__text--300: 219 14% 60%; /* #8A94A6 */
-  --clr__text--400: 218 14% 73%; /* #B0B7C3 */
-
-  --bg__primary--100: 216 14% 79%;  /* #C1C7D0 */
-  --bg__primary--200: 228 14% 93%;  /* #EBECF0 */
-  --bg__primary--300: 210 25% 98%;  /* #FAFBFC */
-  --bg__primary--400:   0  0% 100%; /* #FFFFFF */
-
-  --fs__scale--h1: 80px;
-  --fs__scale--h2: 60px;
-  --fs__scale--h3: 48px;
-  --fs__scale--h4: 40px;
-  --fs__scale--h5: 32px;
-  --fs__scale--h6: 28px;
-  --fs__scale--h7: 26px;
-  --fs__scale--h8: 24px;
-  --fs__scale--h9: 22px;
-
-  --fs__body--p1: 20px;
-  --fs__body--p2: 18px;
-  --fs__small--p1: 16px;
-  --fs__small--p2: 14px;
-  --fs__small--p3: 12px;
-  --fs__tiny: 10px;
-
-  --fw__thin: 200;
-  --fw__light: 300;
-  --fw__regular: 400;
-  --fw__medium: 500;
-  --fw__semiBold: 600;
-  --fw__bold: 700;
-  --fw__extraBold: 800;
-  --fw__black: 900;
-
-  --ff__inter: Inter;
-  --clr__--100:  ;
-
-  --space__base: 4px;
-  --spc__scale-2: calc(var(--space__base) * 2);
-  --spc__scale-3: calc(var(--space__base) * 3);
-  --spc__scale-4: calc(var(--space__base) * 4);
-  --spc__scale-5: calc(var(--space__base) * 5);
-  --spc__scale-6: calc(var(--space__base) * 6);
-  --spc__scale-7: calc(var(--space__base) * 7);
-  --spc__scale-8: calc(var(--space__base) * 8);
-  --spc__scale-9: calc(var(--space__base) * 9);
-  --spc__scale-10: calc(var(--space__base) * 10);
-  --spc__scale-11: calc(var(--space__base) * 11);
-  --spc__scale-12: calc(var(--space__base) * 12);
-  --spc__scale-13: calc(var(--space__base) * 13);
-  --spc__scale-14: calc(var(--space__base) * 14);
-  --spc__scale-15: calc(var(--space__base) * 15);
-  --spc__scale-16: calc(var(--space__base) * 16);
-  --spc__scale-17: calc(var(--space__base) * 17);
-  --spc__scale-18: calc(var(--space__base) * 18);
-  --spc__scale-19: calc(var(--space__base) * 19);
-  --spc__scale-20: calc(var(--space__base) * 20);
-  --spc__scale-25: calc(var(--space__base) * 25);
-  --spc__scale-26: calc(var(--space__base) * 26);
-  --spc__scale-27: calc(var(--space__base) * 27);
-  --spc__scale-28: calc(var(--space__base) * 28);
-  --spc__scale-29: calc(var(--space__base) * 29);
-
-  --box-shadow-1: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;;
-}
-@media screen and (max-width: 768px) {
-  :root {
-    --fs__scale--h1: 48px;
-    --fs__scale--h2: 40px;
-    --fs__scale--h3: 32px;
-    --fs__scale--h4: 28px;
-    --fs__scale--h5: 26px;
-    --fs__scale--h6: 24px;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
-.bg-primary-100 {
-  background: hsla(var(--bg__primary--100));
-}
-.bg-primary-200 {
-  background: hsla(var(--bg__primary--200));
-}
-.bg-primary-300 {
-  background: hsla(var(--bg__primary--300));
-}
-.bg-primary-400 {
-  background: hsla(var(--bg__primary--400));
-}
-.text-color-100 {
-  color: hsla(var(--clr__text--100));
-}
-.text-color-200 {
-  color: hsla(var(--clr__text--200));
-}
-.text-color-300 {
-  color: hsla(var(--clr__text--300));
-}
-.text-color-400 {
-  color: hsla(var(--clr__text--400));
-}
-.ff-inter {
-  font-family: var(--ff__inter);
-}
-.fs-h100 {
-  font-size: var(--fs__scale--h1);
-}
-.fs-h200 {
-  font-size: var(--fs__scale--h2);
-}
-.fs-h300 {
-  font-size: var(--fs__scale--h3);
-}
-.fs-h400 {
-  font-size: var(--fs__scale--h4);
-}
-.fs-h500 {
-  font-size: var(--fs__scale--h5);
-}
-.fs-h600 {
-  font-size: var(--fs__scale--h6);
-}
-.fs-h700 {
-  font-size: var(--fs__scale--h7);
-}
-.fs-h800 {
-  font-size: var(--fs__scale--h8);
-}
-.fs-h900 {
-  font-size: var(--fs__scale--h9);
-}
-.fs-body-100 {
-  font-size: var(--fs__body--p1);
-}
-.fs-body-200 {
-  font-size: var(--fs__body--p2);
-}
-.fs-small-100 {
-  font-size: var(--fs__small--p1);
-}
-.fs-small-200 {
-  font-size: var(--fs__small--p2);
-}
-.fs-small-300 {
-  font-size: var(--fs__small--p3);
-}
-.fw-thin {
-  font-weight: var(--fw__thin);
-}
-.fw-light {
-  font-weight: var(--fw__light);
-}
-.fw-regular {
-  font-weight: var(--fw__regular);
-}
-.fw-medium {
-  font-weight: var(--fw__medium);
-}
-.fw-semi-bold {
-  font-weight: var(--fw__semiBold);
-}
-.fw-bold {
-  font-weight: var(--fw__bold);
-}
-.fw-extra-bold {
-  font-weight: var(--fw__extraBold);
-}
-.fw-black {
-  font-weight: var(--fw__black);
-}
-.letter-spacing-1 {
-  letter-spacing: 1px;
-}
-.line-height-35 {
-  line-height: 35px;
-}
-.box-shadow-1 {
-  box-shadow: var(--box-shadow-1);
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-.container {
-  --padding: 1rem;
-  --max__width: 1200px;
-  width: min(var(--max__width), 100% - (var(--padding) * 2));
-  margin-inline: auto;
+.card {
+  padding: 2em;
 }
-.capitalize {
-  text-transform: capitalize;
-}
-.uppercase {
-  text-transform: uppercase;
+
+.read-the-docs {
+  color: #888;
 }

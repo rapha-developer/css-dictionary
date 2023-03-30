@@ -1,6 +1,0 @@
-.heading {
-    --gap: var(--spc__scale-6);
-    display: grid;
-    gap: var(--gap);
-    margin-bottom: var(--spc__scale-13);
-}
