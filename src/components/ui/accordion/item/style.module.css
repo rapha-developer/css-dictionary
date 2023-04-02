@@ -1,0 +1,37 @@
+.accordionMenu__item:hover {
+    border-radius: var(--spc__base);
+    background: hsla(var(--bg__primary--100) / 0.09);
+    padding-left: var(--space__base);
+    margin-right: var(--space__base);
+    transition: all 0.3s ease-out;
+}
+.accordionMenu__link {
+    --gap: 15px;
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+    padding-block: var(--spc__scale-3);
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__regular);
+    color: hsl(var(--clr__text--300));
+}
+.accordionCircle__icon {
+    width: 18px;
+    height: 18px;
+}
+.accordionCircle__icon[data-color="blue"] {
+    color: hsl(var(--clr__primary--100));
+}
+.accordionCircle__icon[data-color="green"] {
+    color: hsl(var(--clr__primary--200));
+}
+.accordionCircle__icon[data-color="orange"] {
+    color: hsl(var(--clr__primary--300));
+}
+.accordionCircle__icon[data-color="red"] {
+    color: hsl(var(--clr__primary--400));
+}
+.accordionCircle__icon[data-color="gray"] {
+    color: hsl(var(--bg__primary--100));
+}
