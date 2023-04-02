@@ -1,0 +1,16 @@
+.sidebar__group {
+	margin-bottom: var(--spc__scale-6);
+}
+.sidebarGroup__title {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p3);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__text--300));
+    letter-spacing: 1px;
+    margin-bottom: var(--spc__scale-4);
+}
+.sidebarGroup__list {
+    --gap: var(--spc__scale-2);
+	display: grid;
+	gap: var(--gap);
+}
