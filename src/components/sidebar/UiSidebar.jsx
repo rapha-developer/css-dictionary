@@ -3,11 +3,13 @@ import UiAccordion from "../ui/accordion/UiAccordion";
 import SidebarLogo from '../../assets/boxboard-logo.svg'
 import { createFirstAccordionData, 
 		createSecondAccordionData,	
-		createSidebarGroupData } from '../../data/sidebar'
+		createSidebarGroupData,
+		createItemsDataToSingleItem,
+		createOrdinalItems } from '../../data/sidebar'
 import styles from "./style.module.css";
+import UiSidebarSingleItem from "./single-item/UiSidebarSingleitem";
 
 function UiSidebar(props) {
-
 	return (
 		<aside className={styles.sidebar} data-visible={props.isShowSidebar}>
 			<div className={styles.sidebar__head}>
@@ -31,6 +33,12 @@ function UiSidebar(props) {
 					format={createSecondAccordionData.format}
 					type={createSecondAccordionData.type}
 					items={createSecondAccordionData.items}
+				/>
+				<UiSidebarSingleItem 
+					item={createItemsDataToSingleItem[createOrdinalItems.first]}
+				/>
+				<UiSidebarSingleItem 
+					item={createItemsDataToSingleItem[createOrdinalItems.second]}
 				/>
                 <button className={styles.sidebar__close}
                     onClick={props.changeIsShowSidebar}>X</button>
