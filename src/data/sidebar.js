@@ -57,8 +57,34 @@ const createSecondAccordionData = {
         },
     ]
 }
+const createItemsDataToSingleItem = [
+    {
+        name: "archive",
+        url: "#",
+        type: "archive"
+    },
+    {
+        name: "knowledge",
+        url: "#",
+        type: "know"
+    },
+    {
+        name: "contact",
+        url: "#",
+        type: "contact"
+    },
+]
+const createOrdinalItems = {
+    first: 0,
+    second: 1,
+    third: 2,
+    fourth: 3,
+    fifth: 4
+}
 export {
     createSidebarGroupData,
     createFirstAccordionData,
-    createSecondAccordionData
+    createSecondAccordionData,
+    createItemsDataToSingleItem,
+    createOrdinalItems
 }
