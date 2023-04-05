@@ -28,7 +28,7 @@
     background: hsl(var(--bg__primary--200));
     cursor: pointer;
 }
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 768px) {
     .sidebar__close {
         display: block;
     }
