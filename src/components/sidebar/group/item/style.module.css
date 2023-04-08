@@ -1,6 +1,12 @@
 .sidebarGroup__item {
-	padding: var(--spc__scale-2) var(--space__base);
-	border-radius: var(--space__base);
+	padding: 10px var(--spc__scale-2);
+	border-radius: var(--spc__scale-2);
+    transition: all 0.3s ease-in;
+}
+.sidebarGroup__item:hover {
+    margin-left: var(--space__base);
+	background: hsla(var(--clr__text--300) / 0.06);
+	cursor: pointer;
 }
 .sidebarGroup__link {
 	--gap: 12px;
@@ -11,10 +17,6 @@
 	font-size: var(--fs__small--p2);
 	font-weight: var(--fw__semiBold);
 	color: hsla(var(--clr__text--300));
-}
-.sidebarGroup__item:hover {
-	background: hsla(var(--clr__text--300) / 0.06);
-	cursor: pointer;
 }
 .sidebarGroup__icon {
 	width: 20px;
