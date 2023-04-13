@@ -6,7 +6,8 @@ import UiHeadBar from './components/headbar/UiHeadBar';
 import './App.css'
 import UiCategoriesDetailsPage from './pages/categories/details/UiCategoriesDetailsPage';
 import { categoryDetailsExample } from './data/categoryDetails'
-
+import UiEncyclopediaPage from './pages/encyclopedia/UiEncyclopediaPage';
+import { createStartWithEncyclopediaPage } from './data/encyclopedia/createEncyclopediaPage'
 function App() {
   const [isShowSidebar, setIsShowSidebar] = useState(false)
   function changeIsShowSidebar() {
@@ -23,11 +24,15 @@ function App() {
           changeIsShowSidebar={() => changeIsShowSidebar()}
           isShowSidebar={isShowSidebar}
         />
-        <UiCategoriesDetailsPage 
+        <UiEncyclopediaPage 
+          title={createStartWithEncyclopediaPage.title}
+          collection={createStartWithEncyclopediaPage.items}
+        />
+        {/* <UiCategoriesDetailsPage 
           title={categoryDetailsExample.title}
           description={categoryDetailsExample.description}
           sample={categoryDetailsExample.sample}
-        />
+        /> */}
       </section>
     </div>
   )
