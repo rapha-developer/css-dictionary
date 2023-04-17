@@ -44,6 +44,7 @@
 	.sidebar[data-visible="true"] {
 		display: block;
 		transform: translateX(0);
+		z-index: 1;
 	}
 	@supports (backdrop-filter: blur(1rem)) {
 		.sidebar {
