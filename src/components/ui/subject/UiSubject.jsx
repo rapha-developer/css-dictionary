@@ -14,7 +14,7 @@ function UiSubject({title, collection}) {
         return (
             <UiSubjectItem 
                 key={property.name}
-                url={property.url}
+                slug={property.slug}
                 color={property.color}
                 name={property.name}
             />
