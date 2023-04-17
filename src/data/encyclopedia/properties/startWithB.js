@@ -1,7 +1,7 @@
 const createPropertiesThatStartWithTheLetterB = [
     {
         name: "backdrop-filter",
-        url: "#",
+        slug: "backdrop-filter",
         description: {
             en: "Defines a graphical effect to the area behind an element",
             pt: "Especifica um "
@@ -9,7 +9,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "backface-visibility",
-        url: "#",
+        slug: "backface-visibility",
         description: {
             en: "Defines whether or not the back face of an element should be visible when facing the user",
             pt: ""
@@ -17,7 +17,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background",
-        url: "#",
+        slug: "background",
         description: {
             en: "A shorthand property for all the background-* properties",
             pt: ""
@@ -25,7 +25,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-attachment",
-        url: "#",
+        slug: "background-attachment",
         description: {
             en: "Sets whether a background image scrolls with the rest of the page, or is fixed",
             pt: ""
@@ -33,7 +33,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-blend-mode",
-        url: "#",
+        slug: "background-blend-mode",
         description: {
             en: "Specifies the blending mode of each background layer (color/image)",
             pt: ""
@@ -41,7 +41,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-clip",
-        url: "#",
+        slug: "background-clip",
         description: {
             en: "Defines how far the background (color or image) should extend within an element",
             pt: ""
@@ -49,7 +49,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-color",
-        url: "#",
+        slug: "background-color",
         description: {
             en: "Specifies the background color of an element",
             pt: ""
@@ -57,7 +57,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-image",
-        url: "#",
+        slug: "background-image",
         description: {
             en: "Specifies one or more background images for an element",
             pt: ""
@@ -65,7 +65,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-origin",
-        url: "#",
+        slug: "background-origin",
         description: {
             en: "Specifies the origin position of a background image",
             pt: ""
@@ -73,7 +73,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-position",
-        url: "#",
+        slug: "background-position",
         description: {
             en: "Specifies the position of a background image",
             pt: ""
@@ -81,7 +81,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-position-x",
-        url: "#",
+        slug: "background-position-x",
         description: {
             en: "Specifies the position of a background image on x-axis",
             pt: ""
@@ -89,7 +89,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-position-y",
-        url: "#",
+        slug: "background-position-y",
         description: {
             en: "Specifies the position of a background image on y-axis",
             pt: ""
@@ -97,7 +97,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-repeat",
-        url: "#",
+        slug: "background-repeat",
         description: {
             en: "Sets if/how a background image will be repeated",
             pt: ""
@@ -105,7 +105,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "background-size",
-        url: "#",
+        slug: "background-size",
         description: {
             en: "Specifies the size of the background images",
             pt: ""
@@ -113,7 +113,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "block-size",
-        url: "#",
+        slug: "block-size",
         description: {
             en: "Specifies the size of an element in block direction",
             pt: ""
@@ -121,7 +121,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border",
-        url: "#",
+        slug: "border",
         description: {
             en: "A shorthand property for border-width, border-style and border-color",
             pt: ""
@@ -129,7 +129,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-block",
-        url: "#",
+        slug: "border-block",
         description: {
             en: "A shorthand property for border-block-width, border-block-style and border-block-color",
             pt: ""
@@ -137,7 +137,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-block-color",
-        url: "#",
+        slug: "border-block-color",
         description: {
             en: "Sets the color of the borders at start and end in the block direction",
             pt: ""
@@ -145,7 +145,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-block-end-color",
-        url: "#",
+        slug: "border-block-end-color",
         description: {
             en: "Sets the color of the border at the end in the block direction",
             pt: ""
@@ -153,7 +153,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-block-end-style",
-        url: "#",
+        slug: "border-block-end-style",
         description: {
             en: "Sets the style of the border at the end in the block direction",
             pt: ""
@@ -161,7 +161,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-block-end-width",
-        url: "#",
+        slug: "border-block-end-width",
         description: {
             en: "Sets the width of the border at the end in the block direction",
             pt: ""
@@ -169,7 +169,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-block-start-color",
-        url: "#",
+        slug: "border-block-start-color",
         description: {
             en: "Sets the color of the border at the start in the block direction",
             pt: ""
@@ -177,7 +177,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-block-start-style",
-        url: "#",
+        slug: "border-block-start-style",
         description: {
             en: "Sets the style of the border at the start in the block direction",
             pt: ""
@@ -185,7 +185,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-block-start-width",
-        url: "#",
+        slug: "border-block-start-width",
         description: {
             en: "Sets the width of the border at the start in the block direction",
             pt: ""
@@ -193,7 +193,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-block-style",
-        url: "#",
+        slug: "border-block-style",
         description: {
             en: "Sets the style of the borders at start and end in the block direction",
             pt: ""
@@ -201,7 +201,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-block-width",
-        url: "#",
+        slug: "border-block-width",
         description: {
             en: "Sets the width of the borders at start and end in the block direction",
             pt: ""
@@ -209,7 +209,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-bottom",
-        url: "#",
+        slug: "border-bottom",
         description: {
             en: "A shorthand property for border-bottom-width, border-bottom-style and border-bottom-color",
             pt: ""
@@ -217,7 +217,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-bottom-color",
-        url: "#",
+        slug: "border-bottom-color",
         description: {
             en: "Sets the color of the bottom border",
             pt: ""
@@ -225,7 +225,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-bottom-left-radius",
-        url: "#",
+        slug: "border-bottom-left-radius",
         description: {
             en: "Defines the radius of the border of the bottom-left corner",
             pt: ""
@@ -233,7 +233,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-bottom-right-radius",
-        url: "#",
+        slug: "border-bottom-right-radius",
         description: {
             en: "Defines the radius of the border of the bottom-right corner",
             pt: ""
@@ -241,7 +241,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-bottom-style",
-        url: "#",
+        slug: "border-bottom-style",
         description: {
             en: "Sets the style of the bottom border",
             pt: ""
@@ -249,7 +249,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-bottom-width",
-        url: "#",
+        slug: "border-bottom-width",
         description: {
             en: "Sets the width of the bottom border",
             pt: ""
@@ -257,7 +257,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-collapse",
-        url: "#",
+        slug: "border-collapse",
         description: {
             en: "Sets whether table borders should collapse into a single border or be separated",
             pt: ""
@@ -265,7 +265,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-color",
-        url: "#",
+        slug: "border-color",
         description: {
             en: "Sets the color of the four borders",
             pt: ""
@@ -273,7 +273,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-image",
-        url: "#",
+        slug: "border-image",
         description: {
             en: "A shorthand property for all the border-image-* properties",
             pt: ""
@@ -281,7 +281,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-image-outset",
-        url: "#",
+        slug: "border-image-outset",
         description: {
             en: "Specifies the amount by which the border image area extends beyond the border box",
             pt: ""
@@ -289,7 +289,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-image-repeat",
-        url: "#",
+        slug: "border-image-repeat",
         description: {
             en: "Specifies whether the border image should be repeated, rounded or stretched",
             pt: ""
@@ -297,7 +297,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-image-slice",
-        url: "#",
+        slug: "border-image-slice",
         description: {
             en: "Specifies how to slice the border image",
             pt: ""
@@ -305,7 +305,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-image-source",
-        url: "#",
+        slug: "border-image-source",
         description: {
             en: "Specifies the path to the image to be used as a border",
             pt: ""
@@ -313,7 +313,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-image-width",
-        url: "#",
+        slug: "border-image-width",
         description: {
             en: "Specifies the width of the border image",
             pt: ""
@@ -321,7 +321,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-inline",
-        url: "#",
+        slug: "border-inline",
         description: {
             en: "A shorthand property for border-inline-width, border-inline-style and border-inline-color",
             pt: ""
@@ -329,7 +329,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-inline-color",
-        url: "#",
+        slug: "border-inline-color",
         description: {
             en: "Sets the color of the borders at start and end in the inline direction",
             pt: ""
@@ -337,7 +337,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-inline-end-color",
-        url: "#",
+        slug: "border-inline-end-color",
         description: {
             en: "Sets the color of the border at the end in the inline direction",
             pt: ""
@@ -345,7 +345,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-inline-end-style",
-        url: "#",
+        slug: "border-inline-end-style",
         description: {
             en: "Sets the style of the border at the end in the inline direction",
             pt: ""
@@ -353,7 +353,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-inline-end-width",
-        url: "#",
+        slug: "border-inline-end-width",
         description: {
             en: "Sets the width of the border at the end in the inline direction",
             pt: ""
@@ -361,7 +361,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-inline-start-color",
-        url: "#",
+        slug: "border-inline-start-color",
         description: {
             en: "Sets the color of the border at the start in the inline direction",
             pt: ""
@@ -369,7 +369,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-inline-start-style",
-        url: "#",
+        slug: "border-inline-start-style",
         description: {
             en: "Sets the style of the border at the start in the inline direction",
             pt: ""
@@ -377,7 +377,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-inline-start-width",
-        url: "#",
+        slug: "border-inline-start-width",
         description: {
             en: "Sets the width of the border at the start in the inline direction",
             pt: ""
@@ -385,7 +385,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-inline-style",
-        url: "#",
+        slug: "border-inline-style",
         description: {
             en: "Sets the style of the borders at start and end in the inline direction",
             pt: ""
@@ -393,7 +393,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-inline-width",
-        url: "#",
+        slug: "border-inline-width",
         description: {
             en: "Sets the width of the borders at start and end in the inline direction",
             pt: ""
@@ -401,7 +401,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-left",
-        url: "#",
+        slug: "border-left",
         description: {
             en: "A shorthand property for all the border-left-* properties",
             pt: ""
@@ -409,7 +409,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-left-color",
-        url: "#",
+        slug: "border-left-color",
         description: {
             en: "Sets the color of the left border",
             pt: ""
@@ -417,7 +417,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-left-style",
-        url: "#",
+        slug: "border-left-style",
         description: {
             en: "Sets the style of the left border",
             pt: ""
@@ -425,7 +425,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-left-width",
-        url: "#",
+        slug: "border-left-width",
         description: {
             en: "Sets the width of the left border",
             pt: ""
@@ -433,7 +433,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-radius",
-        url: "#",
+        slug: "border-radius",
         description: {
             en: "A shorthand property for the four border-*-radius properties",
             pt: ""
@@ -441,7 +441,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-right",
-        url: "#",
+        slug: "border-right",
         description: {
             en: "A shorthand property for all the border-right-* properties",
             pt: ""
@@ -449,7 +449,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-right-color",
-        url: "#",
+        slug: "border-right-color",
         description: {
             en: "Sets the color of the right border",
             pt: ""
@@ -457,7 +457,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-right-style",
-        url: "#",
+        slug: "border-right-style",
         description: {
             en: "Sets the style of the right border",
             pt: ""
@@ -465,7 +465,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-right-width",
-        url: "#",
+        slug: "border-right-width",
         description: {
             en: "Sets the width of the right border",
             pt: ""
@@ -473,7 +473,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-spacing",
-        url: "#",
+        slug: "border-spacing",
         description: {
             en: "Sets the distance between the borders of adjacent cells",
             pt: ""
@@ -481,7 +481,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-style",
-        url: "#",
+        slug: "border-style",
         description: {
             en: "Sets the style of the four borders",
             pt: ""
@@ -489,7 +489,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-top",
-        url: "#",
+        slug: "border-top",
         description: {
             en: "A shorthand property for border-top-width, border-top-style and border-top-color",
             pt: ""
@@ -497,7 +497,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-top-color",
-        url: "#",
+        slug: "border-top-color",
         description: {
             en: "Sets the color of the top border",
             pt: ""
@@ -505,7 +505,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-top-left-radius",
-        url: "#",
+        slug: "border-top-left-radius",
         description: {
             en: "Defines the radius of the border of the top-left corner",
             pt: ""
@@ -513,7 +513,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-top-right-radius",
-        url: "#",
+        slug: "border-top-right-radius",
         description: {
             en: "Defines the radius of the border of the top-right corner",
             pt: ""
@@ -521,7 +521,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-top-style",
-        url: "#",
+        slug: "border-top-style",
         description: {
             en: "Sets the style of the top border",
             pt: ""
@@ -529,7 +529,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-top-width",
-        url: "#",
+        slug: "border-top-width",
         description: {
             en: "Sets the width of the top border",
             pt: ""
@@ -537,7 +537,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "border-width",
-        url: "#",
+        slug: "border-width",
         description: {
             en: "Sets the width of the four borders",
             pt: ""
@@ -545,7 +545,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "bottom",
-        url: "#",
+        slug: "bottom",
         description: {
             en: "Sets the elements position, from the bottom of its parent element",
             pt: ""
@@ -553,7 +553,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "box-decoration-break",
-        url: "#",
+        slug: "box-decoration-break",
         description: {
             en: "Sets the behavior of the background and border of an element at page-break, or, for in-line elements, at line-break.",
             pt: ""
@@ -561,7 +561,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "box-reflect",
-        url: "#",
+        slug: "box-reflect",
         description: {
             en: "The box-reflect property is used to create a reflection of an element.",
             pt: ""
@@ -569,7 +569,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "box-shadow",
-        url: "#",
+        slug: "box-shadow",
         description: {
             en: "Attaches one or more shadows to an element",
             pt: ""
@@ -577,7 +577,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "box-sizing",
-        url: "#",
+        slug: "box-sizing",
         description: {
             en: "Defines how the width and height of an element are calculated: should they include padding and borders, or not",
             pt: ""
@@ -585,7 +585,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "break-after",
-        url: "#",
+        slug: "break-after",
         description: {
             en: "Specifies whether or not a page-, column-, or region-break should occur after the specified element",
             pt: ""
@@ -593,7 +593,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "break-before",
-        url: "#",
+        slug: "break-before",
         description: {
             en: "Specifies whether or not a page-, column-, or region-break should occur before the specified element",
             pt: ""
@@ -601,7 +601,7 @@ const createPropertiesThatStartWithTheLetterB = [
     },
     {
         name: "break-inside",
-        url: "#",
+        slug: "break-inside",
         description: {
             en: "Specifies whether or not a page-, column-, or region-break should occur inside the specified element",
             pt: ""

@@ -1,7 +1,7 @@
 const createPropertiesThatStartWithTheLetterD = [
     {
         name: "direction",
-        url: "#",
+        slug: "direction",
         description: {
             en: "Specifies the text direction/writing direction",
             pt: "Especifica a direção"
@@ -9,7 +9,7 @@ const createPropertiesThatStartWithTheLetterD = [
     },
     {
         name: "display",
-        url: "#",
+        slug: "display",
         description: {
             en: "Specifies how a certain HTML element should be displayed",
             pt: "Especifica como um certo elemento HTML"

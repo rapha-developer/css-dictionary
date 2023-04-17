@@ -1,7 +1,7 @@
 const createPropertiesThatStartWithTheLetterC = [
     {
         name: "caption-side",
-        url: "#",
+        slug: "caption-side",
         description: {
             en: "Specifies the placement of a table caption",
             pt: "Especifica um posicionamento"
@@ -9,7 +9,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "caret-color",
-        url: "#",
+        slug: "caret-color",
         description: {
             en: "Specifies the color of the cursor (caret) in inputs, textareas, or any element that is editable",
             pt: "Especifica a cor do cursor"
@@ -17,7 +17,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "@charset",
-        url: "#",
+        slug: "charset",
         description: {
             en: "Specifies the character encoding used in the style sheet",
             pt: "Especifica a codificação de"
@@ -25,7 +25,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "clear",
-        url: "#",
+        slug: "clear",
         description: {
             en: "Specifies what should happen with the element that is next to a floating element",
             pt: "Especifica o que deveria acontecer"
@@ -33,7 +33,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "clip",
-        url: "#",
+        slug: "clip",
         description: {
             en: "Clips an absolutely positioned element",
             pt: "Corta um elemento absolutamente posicionado"
@@ -41,7 +41,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "color",
-        url: "#",
+        slug: "color",
         description: {
             en: "Sets the color of text",
             pt: "Define a cor do texto"
@@ -49,7 +49,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "column-count",
-        url: "#",
+        slug: "column-count",
         description: {
             en: "Specifies the number of columns an element should be divided into",
             pt: "Especifica o número de colunas"
@@ -57,7 +57,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "column-fill",
-        url: "#",
+        slug: "column-fill",
         description: {
             en: "Specifies how to fill columns, balanced or not",
             pt: "Especifica como preencher"
@@ -65,7 +65,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "column-gap",
-        url: "#",
+        slug: "column-gap",
         description: {
             en: "Specifies the gap between the columns",
             pt: "Especifica a lacuna entre as colunas"
@@ -73,7 +73,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "column-rule",
-        url: "#",
+        slug: "column-rule",
         description: {
             en: "A shorthand property for all the column-rule-* properties",
             pt: "Uma propriedade abreviada para todas"
@@ -81,7 +81,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "column-rule-color",
-        url: "#",
+        slug: "column-rule-color",
         description: {
             en: "Specifies the color of the rule between columns",
             pt: "Especifica a cor da regra entre as colunas"
@@ -89,7 +89,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "column-rule-style",
-        url: "#",
+        slug: "column-rule-style",
         description: {
             en: "Specifies the style of the rule between columns",
             pt: "Especifica o estilo da regra entre as colunas"
@@ -97,7 +97,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "column-rule-width",
-        url: "#",
+        slug: "column-rule-width",
         description: {
             en: "Specifies the width of the rule between columns",
             pt: "Especifica o tamanho da regra entre as colunas"
@@ -105,7 +105,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "column-span",
-        url: "#",
+        slug: "column-span",
         description: {
             en: "Specifies how many columns an element should span across",
             pt: "Especifica quantas colunas"
@@ -113,7 +113,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "column-width",
-        url: "#",
+        slug: "column-width",
         description: {
             en: "Specifies the column width",
             pt: "Especifica a largura da coluna"
@@ -121,7 +121,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "columns",
-        url: "#",
+        slug: "columns",
         description: {
             en: "A shorthand property for column-width and column-count",
             pt: "Uma propriedade abreviada"
@@ -129,7 +129,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "content",
-        url: "#",
+        slug: "content",
         description: {
             en: "Used with the :before and :after pseudo-elements, to insert generated content",
             pt: "Usado com o :before e :after"
@@ -137,7 +137,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "counter-increment",
-        url: "#",
+        slug: "counter-increment",
         description: {
             en: "Increases or decreases the value of one or more CSS counters",
             pt: "Aumenta ou diminua o valor"
@@ -145,7 +145,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "counter-reset",
-        url: "#",
+        slug: "counter-reset",
         description: {
             en: "Creates or resets one or more CSS counters",
             pt: "Cria ou redefine um"
@@ -153,7 +153,7 @@ const createPropertiesThatStartWithTheLetterC = [
     },
     {
         name: "cursor",
-        url: "#",
+        slug: "cursor",
         description: {
             en: "Specifies the mouse cursor to be displayed when pointing over an element",
             pt: "Especifica o cursor do mouse para"

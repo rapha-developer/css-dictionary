@@ -1,7 +1,7 @@
 const createPropertiesThatStartWithTheLetterA = [
     {
         name: "accent-color",
-        url: "#",
+        slug: "accent-color",
         description: {
             en: "Specifies an accent color for user-interface controls",
             pt: "Especifica um "
@@ -9,7 +9,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "align-content",
-        url: "#",
+        slug: "align-content",
         description: {
             en: "Specifies the alignment between the lines inside a flexible container when the items do not use all available space",
             pt: "Especifica um "
@@ -17,7 +17,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "align-items",
-        url: "#",
+        slug: "align-items",
         description: {
             en: "Specifies the alignment for items inside a flexible container",
             pt: "Especifica um "
@@ -25,7 +25,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "align-self",
-        url: "#",
+        slug: "align-self",
         description: {
             en: "Specifies the alignment for selected items inside a flexible container",
             pt: "Especifica um "
@@ -33,7 +33,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "all",
-        url: "#",
+        slug: "all",
         description: {
             en: "Resets all properties (except unicode-bidi and direction)",
             pt: "Reseta todas"
@@ -41,7 +41,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "animation",
-        url: "#",
+        slug: "animation",
         description: {
             en: "A shorthand property for all the animation-* properties",
             pt: "Uma propriedade abreviada"
@@ -49,7 +49,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "animation-delay",
-        url: "#",
+        slug: "animation-delay",
         description: {
             en: "Specifies a delay for the start of an animation",
             pt: "Especifica um delay"
@@ -57,7 +57,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "animation-direction",
-        url: "#",
+        slug: "animation-direction",
         description: {
             en: "Specifies whether an animation should be played forwards, backwards or in alternate cycles",
             pt: "Especifica se uma animação"
@@ -65,7 +65,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "animation-duration",
-        url: "#",
+        slug: "animation-duration",
         description: {
             en: "Specifies how long an animation should take to complete one cycle",
             pt: "Especifica quão tempo uma animação"
@@ -73,7 +73,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "animation-fill-mode",
-        url: "#",
+        slug: "animation-fill-mode",
         description: {
             en: "Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)",
             pt: "Especifica um estilo para o elemento"
@@ -81,7 +81,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "animation-iteration-count",
-        url: "#",
+        slug: "animation-iteration-count",
         description: {
             en: "Specifies the number of times an animation should be played",
             pt: "Especifica o número de vezes que uma animação dever ser reproduzida "
@@ -89,7 +89,7 @@ const createPropertiesThatStartWithTheLetterA = [
     },
     {
         name: "animation-name",
-        url: "#",
+        slug: "animation-name",
         description: {
             en: "Specifies a name for the @keyframes animation",
             pt: "Especifica um nome para a animação @keyframes "
