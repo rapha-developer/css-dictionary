@@ -1,9 +1,11 @@
 
+import { createStartWithEncyclopediaPage } from '../../data/encyclopedia/createEncyclopediaPage'
+import { useLoaderData } from 'react-router-dom'
 import UiSubject from '../../components/ui/subject/UiSubject'
 import styles from './style.module.css'
-function UiEncyclopediaPage({title, collection}) {
-
-    const subject__items = collection.map((subject) => {
+function UiEncyclopediaPage() {
+    const { title, items } = useLoaderData()
+    const subject__items = items.map((subject) => {
         return (
             <UiSubject 
                 key={subject.title}
@@ -18,5 +20,8 @@ function UiEncyclopediaPage({title, collection}) {
             {subject__items}
         </section>
     )
+}
+export async function loader({ params }) {
+    return createStartWithEncyclopediaPage.find((encyclopediaPart) => encyclopediaPart.slug === params.categorySlug)
 }
 export default UiEncyclopediaPage
