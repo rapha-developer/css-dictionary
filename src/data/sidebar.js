@@ -2,7 +2,7 @@ const createSidebarGroupData = {
     title: 'pages',
     items: [
         {
-            url: "#",
+            url: "/",
             name: "recent materials",
             icon: "clock"
         },
@@ -19,13 +19,13 @@ const createFirstAccordionData = {
     type: "links",
     items: [
         {
-            url: "#",
-            name: "design",
+            url: "/ref/css-properties",
+            name: "CSS Property",
             icon: "blue"
         },
         {
-            url: "#",
-            name: "development",
+            url: "/ref/css-functions",
+            name: "CSS Functions",
             icon: "green"
         },
         {
