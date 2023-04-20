@@ -48,5 +48,4 @@
 .uiCategoriesExample__sample {
     border-radius: var(--spc__scale-4);
     background: hsla(var(--bg__primary--300));
-    height: 30vh;
 }
