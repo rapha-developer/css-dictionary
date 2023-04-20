@@ -1,0 +1,13 @@
+.box {
+    font-family: var(--ff__inter, sans-serif);
+    padding: .5rem;
+    border-radius: .25rem;
+    width: 100px;
+    height: 100px;
+}
+.box[data-color="red"] {
+    background-color: red;
+}
+.box[data-color="blue"] {
+    background-color: blue;
+}
