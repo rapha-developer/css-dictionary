@@ -1,0 +1,69 @@
+.uiTab__buttons {
+    --clr__tab--violet1: hsl(252 100% 99.0%);
+    --clr__tab--violet2: hsl(252 85.1% 93.0%);
+
+    height: var(--spc__scale-10);
+    background: var(--clr__tab--violet1);
+    box-shadow: inset 0 -1px 0 0 var(--clr__tab--violet2);
+    padding-left: var(--spc__scale-3);
+    display: flex;
+    gap: var(--spc__scale-2);
+}
+.uiTab__btn {
+    height: 100%;
+    all: unset;
+    appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-inline: var(--spc__scale-2);
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+.uiTab__btn[data-active="true"] {
+    font-weight: var(--fw__medium);
+    letter-spacing: -0.025em;
+}
+.uiTab__btn[data-active="true"]::before {
+    --clr__tab--violet3: hsl(252 56.0% 57.5%);
+    
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--clr__tab--violet3);
+}
+.uiTab__btn span {
+    padding: var(--spc__scale-2) var(--spc__scale-4);
+    height: 20px;
+    border-radius: var(--space__base);
+    transition: all 0.3s ease-in;
+
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__semiBold);
+    color: hsl(var(--clr__text--100));
+}
+.uiTab__btn:hover span {
+    --clr__tab--blackA1: hsl(0 0% 0% / 0.047);
+    background: var(--clr__tab--blackA1);
+}
+.uiTab__content {
+    --clr__tab--violet1: hsl(252 100% 99.0%);
+
+    background: var(--clr__tab--violet1);
+    padding: var(--spc__scale-5) var(--spc__scale-6);
+    display: none;
+    min-height: 240px;
+    transition: all 0.35s ease-in;
+
+}
+.uiTab__content[data-visible="true"] {
+    display: block;
+}
+.uiTab__content[data-visible="false"] {
+    display: none;
+}
