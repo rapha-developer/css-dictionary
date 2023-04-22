@@ -24,13 +24,19 @@
     line-height: 30px;
 }
 .uiCategoriesDetails__body {
-    padding: var(--spc__scale-9) var(--spc__scale-6);
+    padding: var(--spc__scale-8) var(--spc__scale-2) var(--spc__scale-8) var(--spc__scale-4);
     background: hsl(var(--bg__primary--400));
     border-radius: var(--spc__scale-4);
 
     --gap: var(--spc__scale-2);
     display: grid;
     gap: var(--gap);
+}
+@media screen and (min-width: 768px) {
+    .uiCategoriesDetails__body {
+        padding: var(--spc__scale-9) var(--spc__scale-6);
+        
+    }
 }
 .uiCategoriesExample__title {
     font-family: var(--ff__inter, sans-serif);
