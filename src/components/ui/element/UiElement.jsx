@@ -2,7 +2,7 @@
 import UiTab from '../tab/UiTab';
 import UiPresentation from './../presentation/UiPresentation';
 
-function UiElement({component, codeCSS}) {
+function UiElement({component, codeHTML, codeCSS}) {
     return (
         <div className="uiElement">
             <UiPresentation 
@@ -10,7 +10,7 @@ function UiElement({component, codeCSS}) {
             />
             <UiTab
                 codeCSS={codeCSS}
-                codeHTML={component}
+                codeHTML={codeHTML}
             />
         </div>
     )
