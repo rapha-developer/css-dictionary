@@ -1,5 +1,4 @@
 
-import { renderToString } from 'react-dom/server'
 import { useEffect } from 'react'
 import { createGrammarLanguageCSS, Positions } from '../../../data/grammar/createGrammarCSS'
 import Prism from 'prismjs'
@@ -29,7 +28,8 @@ function UiCode(props) {
             })
         });
     }
-    const code = (props.language === languages.html) ? renderToString(props.code) : props.code
+    const code = props.code
+
     return (
         <div className="uiCode">
             <pre className="uiCode__block">
