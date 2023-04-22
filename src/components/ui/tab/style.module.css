@@ -5,9 +5,13 @@
     height: var(--spc__scale-10);
     background: var(--clr__tab--violet1);
     box-shadow: inset 0 -1px 0 0 var(--clr__tab--violet2);
-    padding-left: var(--spc__scale-3);
     display: flex;
     gap: var(--spc__scale-2);
+}
+@media screen and (min-width: 768px) {
+    .uiTab__buttons {
+        padding-left: var(--spc__scale-3);
+    }
 }
 .uiTab__btn {
     height: 100%;
@@ -55,11 +59,16 @@
     --clr__tab--violet1: hsl(252 100% 99.0%);
 
     background: var(--clr__tab--violet1);
-    padding: var(--spc__scale-5) var(--spc__scale-6);
+    padding: var(--spc__scale-5) var(--spc__scale-3);
     display: none;
     min-height: 240px;
     transition: all 0.35s ease-in;
 
+}
+@media screen and (min-width: 768px) {
+    .uiTab__content {
+        padding: var(--spc__scale-5) var(--spc__scale-6);
+    }
 }
 .uiTab__content[data-visible="true"] {
     display: block;
