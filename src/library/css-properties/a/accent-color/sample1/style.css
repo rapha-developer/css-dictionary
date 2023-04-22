@@ -1,13 +1,10 @@
-.box {
+.inputClass {
+    accent-color: red;
+    margin-right: 5px;
+}
+.labelClass {
     font-family: var(--ff__inter, sans-serif);
-    padding: .5rem;
-    border-radius: .25rem;
-    width: 100px;
-    height: 100px;
-}
-.box[data-color="red"] {
-    background-color: red;
-}
-.box[data-color="blue"] {
-    background-color: blue;
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__semiBold);
+    color: hsl(var(--clr__text--100));
 }
