@@ -1,18 +1,16 @@
 
+import UiTemplateSetInnerHTML from '../../../../../components/ui/templateSetInner/UiTemplateSetInnerHTML'
 import UiElement from '../../../../../components/ui/element/UiElement'
-import './style.css'
+import htmlRaw from './sample.html?raw'
 import styles from './style.css?inline'
+import './style.css'
 function Sample() {
-    const sample = generateSample()
-    function generateSample() {
-        return (
-            <div className="box background" data-color="blue"></div>
-        )
-    }
+    const sampleComponent = <UiTemplateSetInnerHTML html={htmlRaw} />
     return (
         <UiElement 
             codeCSS={styles}
-            component={sample}
+            codeHTML={htmlRaw}
+            component={sampleComponent}
         />
     )
 }
