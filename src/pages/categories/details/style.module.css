@@ -1,8 +1,13 @@
 .uiCategoriesDetails {
     background: hsla(var(--bg__primary--300));
-    padding: var(--spc__scale-8) var(--spc__scale-6);
+    padding: var(--spc__scale-8) var(--spc__scale-4);
     margin-inline: var(--spc__scale-8);
     border-radius: var(--spc__scale-4);
+}
+@media screen and (min-width: 768px) {
+    .uiCategoriesDetails {
+        padding: var(--spc__scale-8) var(--spc__scale-6);
+    }
 }
 .uiCategoriesDetails__head {
     --gap: 14px;
@@ -24,7 +29,7 @@
     line-height: 30px;
 }
 .uiCategoriesDetails__body {
-    padding: var(--spc__scale-8) var(--spc__scale-2) var(--spc__scale-8) var(--spc__scale-4);
+    padding: var(--spc__scale-8) var(--spc__scale-3);
     background: hsl(var(--bg__primary--400));
     border-radius: var(--spc__scale-4);
 
