@@ -12,7 +12,7 @@ function UiTab({codeCSS, codeHTML}) {
         second: "index.html"
     }
     return (
-        <div className="uiTab" 
+        <div className={styles.uiTab} 
             role="tablist"
             aria-orientation="horizontal"
             data-orientation="horizontal">

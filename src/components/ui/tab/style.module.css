@@ -1,15 +1,21 @@
+@media screen and (max-width: 350px) {
+    .uiTab {
+        width: min(100%, 200px);
+    }
+}
 .uiTab__buttons {
     --clr__tab--violet1: hsl(252 100% 99.0%);
     --clr__tab--violet2: hsl(252 85.1% 93.0%);
-
-    height: var(--spc__scale-10);
+    height: var(--spc__scale-20);
     background: var(--clr__tab--violet1);
     box-shadow: inset 0 -1px 0 0 var(--clr__tab--violet2);
-    display: flex;
+    display: grid;
     gap: var(--spc__scale-2);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 540px) {
     .uiTab__buttons {
+        display: flex;
+        height: var(--spc__scale-10);
         padding-left: var(--spc__scale-3);
     }
 }
@@ -20,7 +26,7 @@
     background: transparent;
     border: none;
     outline: none;
-    padding-inline: var(--spc__scale-2);
+    /* padding-inline: var(--spc__scale-2); */
     outline: none;
     cursor: pointer;
     position: relative;
@@ -29,16 +35,18 @@
     font-weight: var(--fw__medium);
     letter-spacing: -0.025em;
 }
-.uiTab__btn[data-active="true"]::before {
-    --clr__tab--violet3: hsl(252 56.0% 57.5%);
-    
-    content: '';
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--clr__tab--violet3);
+@media screen and (min-width: 540px) {
+    .uiTab__btn[data-active="true"]::before {
+        --clr__tab--violet3: hsl(252 56.0% 57.5%);
+        
+        content: '';
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--clr__tab--violet3);
+    }
 }
 .uiTab__btn span {
     padding: var(--spc__scale-2) var(--spc__scale-4);
