@@ -4,22 +4,22 @@ const createAccentColorSamples = {
     samples: [
         {
             id: "1",
-            title: "Accent color samples",
+            title: "Accent color with Checkbox",
             date: 'today, AT 10 AM',
-            description: "A server-side PHP script to send emails when a form is submitted",
+            description: "This property change the accent color of an checkbox element for the red color",
             sample: {
-                title: "Examples",
-                description: "This script is an interface between the form on your page and the MailChimp API." 
+                title: "Example",
+                description: "Esta propriedade altera a cor de destaque de uma caixa de seleção (checkbox) para a cor vermelha" 
             }
         },
         {
             id: "2",
-            title: "Accent color samples 2",
+            title: "Accent color with Radio Button",
             date: 'today, AT 10 AM',
-            description: "A server-side PHP script to send emails when a form is submitted 2",
+            description: "This property change the accent color of an radio button element for the blue color",
             sample: {
-                title: "Examples 2 ",
-                description: "This script is an interface between the form on your page and the MailChimp API. 2" 
+                title: "Example",
+                description: "Esta propriedade altera a cor de destaque de um botão de radio (radio button) para a cor azul" 
             }
         },
     ]
