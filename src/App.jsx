@@ -17,7 +17,7 @@ function App() {
         changeIsShowSidebar={() => changeIsShowSidebar()}
         isShowSidebar={isShowSidebar}
       />
-      <section className="home">
+      <section className="App__main">
         <UiHeadBar 
           changeIsShowSidebar={() => changeIsShowSidebar()}
           isShowSidebar={isShowSidebar}
