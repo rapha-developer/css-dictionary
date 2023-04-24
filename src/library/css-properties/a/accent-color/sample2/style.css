@@ -1,0 +1,15 @@
+.prop1Sample2Form {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+.prop1Sample2Input {
+    accent-color: blue;
+}
+.prop1Sample2Label {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(var(--clr__text--100));
+    margin-left: 5px;
+}
