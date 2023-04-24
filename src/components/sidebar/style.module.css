@@ -5,6 +5,10 @@
 	max-width: var(--max__width);
 	height: max(100vh, 100%);
 	border-right: 3px solid hsl(var(--bg__primary--300));
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 .sidebar__head {
 	display: grid;
@@ -15,8 +19,8 @@
 	padding: var(--spc__scale-6) var(--spc__scale-4);
 }
 .sidebar__close {
-    --top: 30px;
-    --right: 30px;
+    --top: 15px;
+    --right: 15px;
     display: none;
     position: absolute;
     top: var(--top);
@@ -28,14 +32,14 @@
     background: hsl(var(--bg__primary--200));
     cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .sidebar__close {
         display: block;
     }
 	.sidebar {
-		position: fixed;
 		inset: 0 0 0 30%;
 		max-width: 100%;
+		width: initial;
         background: hsla(var(--bg__primary--400) / 0.6);
         border-left: 3px solid hsl(var(--bg__primary--300));
 		transform: translateX(100%);
@@ -54,5 +58,6 @@
     .sidebar__head {
         place-items: start;
         margin-left: var(--spc__scale-4);
+        margin-top: var(--spc__scale-3);
     }
 }
