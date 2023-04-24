@@ -1,12 +1,12 @@
-.formClass {
+.prop1Sample1Form {
     background: white;
     padding: 16px;
     border-radius: 8px;
 }
-.inputClass {
+.prop1Sample1Input {
     accent-color: red;
 }
-.labelClass {
+.prop1Sample1Label {
     font-family: var(--ff__inter, sans-serif);
     font-size: 14px;
     font-weight: 600;
