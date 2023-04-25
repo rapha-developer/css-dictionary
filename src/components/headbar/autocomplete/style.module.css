@@ -1,0 +1,27 @@
+.uiHeadBarAutocomplete {
+    position: absolute;
+    width: 100%;
+    background-color: hsl(var(--bg__primary--400));
+    z-index: 2;
+}
+.uiHeadBarAutocomplete__item {
+    border: 1px solid hsl(var(--clr__secondary--300));
+    border-top: unset;
+}
+.uiHeadBarAutocomplete__item:hover {
+    background: hsl(var(--bg__primary--300));
+}
+.uiHeadBarAutocomplete__link {
+    border: unset;
+    background: unset;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: var(--spc__scale-4) var(--spc__scale-2);
+
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__semiBold);
+    color: hsl(var(--clr__text--100));
+    cursor: pointer;
+}
