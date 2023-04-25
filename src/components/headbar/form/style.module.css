@@ -1,3 +1,7 @@
+.UiHeadBarForm__group {
+    display: inline-block;
+    position: relative;
+}
 .UiHeadBarForm__input {
     font-family: var(--ff__inter, sans-serif);
     font-size: var(--fs__small--p1);
@@ -11,8 +15,14 @@
     transition: all 0.3s ease-in;
 }
 @media screen and (min-width: 768px) {
-    .UiHeadBarForm__input {
+    .UiHeadBarForm {
         width: max(345px, 100%);
+    }
+    .UiHeadBarForm__group {
+        width: 100%;
+    }
+    .UiHeadBarForm__input {
+        width: inherit;
     }
 }
 .UiHeadBarForm__input::placeholder {
