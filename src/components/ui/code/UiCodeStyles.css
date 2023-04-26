@@ -90,3 +90,22 @@ code[class*=language-], pre[class*=language-] {
 code[class*=language-css], pre[class*=language-css] {
     color: var(--syntax2);
 }
+
+div.code-toolbar>.toolbar>.toolbar-item>a, 
+div.code-toolbar>.toolbar>.toolbar-item>button, 
+div.code-toolbar>.toolbar>.toolbar-item>span {
+    padding: var(--spc__scale-3) var(--spc__scale-3);
+    background: hsl(var(--clr__secondary--400));
+
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__semiBold);
+    color: hsl(var(--clr__text--100));
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+div.code-toolbar>.toolbar>.toolbar-item>a:hover, 
+div.code-toolbar>.toolbar>.toolbar-item>button:hover, 
+div.code-toolbar>.toolbar>.toolbar-item>span:hover {
+    background: hsla(var(--clr__secondary--100) /  1.5);
+}
