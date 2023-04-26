@@ -3,6 +3,10 @@ import { useEffect } from 'react'
 import { createGrammarLanguageCSS, Positions } from '../../../data/grammar/createGrammarCSS'
 import Prism from 'prismjs'
 import 'prismjs/themes/prism-tomorrow.min.css'
+import 'prismjs/plugins/toolbar/prism-toolbar.min'
+import 'prismjs/plugins/toolbar/prism-toolbar.min.css'
+import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min'
+
 import './UiCodeStyles.css'
 function UiCode(props) {
     const languages = {css: "css", html: "html"}
