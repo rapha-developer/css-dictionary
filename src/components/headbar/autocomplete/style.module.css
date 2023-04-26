@@ -11,6 +11,9 @@
 .uiHeadBarAutocomplete__item:hover {
     background: hsl(var(--bg__primary--300));
 }
+.uiHeadBarAutocomplete__item[data-disable="true"] {
+    pointer-events: none;
+}
 .uiHeadBarAutocomplete__link {
     border: unset;
     background: unset;
