@@ -8,25 +8,31 @@ import UiEncyclopediaPage, {loader as encyclopediaLoader} from './pages/encyclop
 import UiCategoriesDetailsPage from './pages/categories/details/UiCategoriesDetailsPage'
 import App from './App'
 import UiCategoriesSamples, {loader as sampleLoader} from './pages/categories/samples/UiCategoriesSamples'
+import UiErrorDetailsPage from './pages/error/details/UiErrorDetailsPage'
+import UiErrorMainPage from './pages/error/main/UiErrorMainPage'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <UiErrorMainPage />,
     children: [
       {
         path: "ref/:categorySlug",
         element: <UiEncyclopediaPage />,
+        errorElement: <UiErrorDetailsPage />,
         loader: encyclopediaLoader
       }, 
       {
         path: "ref/:category/:propertyName",
         element: <UiCategoriesSamples />,
+        errorElement: <UiErrorDetailsPage />,
         loader: sampleLoader,
       },
       {
         path: "ref/:category/:propertyName/:propertyID",
         element: <UiCategoriesDetailsPage />,
+        errorElement: <UiErrorDetailsPage />,
         loader: sampleLoader
       }
     ]
