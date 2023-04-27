@@ -1,0 +1,69 @@
+.uiErrorDetailsPage {
+    margin-left: var(--spc__scale-4);
+    height: 100%;
+    position: relative;
+}
+.uiErrorDetailsPage__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.uiErrorDetailsPage__body {
+    border-radius: var(--spc__scale-3);
+    padding-block: var(--spc__scale-2);
+    display: grid;
+    place-items: center;
+}
+.uiErrorDetailsPage__title {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__scale--h2);
+    font-weight: var(--fw__bold);
+    color: hsl(var(--clr__text--100));
+    margin-bottom: var(--spc__scale-4);
+}
+.uiErrorDetailsPage__text {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__scale--h5);
+    font-weight: var(--fw__semiBold);
+    color: hsl(var(--clr__text--100));
+}
+.uiErrorDetailsPage__image {
+    width: min(100%, 687px);
+    height: min(100%, 485px);
+    object-fit: cover;
+}
+.uiErrorDetailsPage__btnHome {
+    padding: var(--spc__scale-4) var(--spc__scale-6);
+    border-radius: 30px;
+
+    background: hsl(var(--clr__secondary--300));
+    transition: all 0.3s ease-in;
+}
+.uiErrorDetailsPage__btnHome:hover {
+    background: hsl(var(--clr__secondary--300) / 0.7);
+}
+.uiErrorDetailsPage__btnLink {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__scale--h6);
+    font-weight: var(--fw__regular);
+    color: hsl(var(--clr__text--100));
+    cursor: pointer;
+    --gap: var(--spc__scale-2);
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+.uiErrorDetailsPage__btnIcon {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p1);
+    font-weight: var(--fw__regular);
+    color: hsl(var(--clr__text--100));
+    width: 25px;
+    height: 25px;
+}
