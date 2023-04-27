@@ -1,4 +1,5 @@
 
+import { IoIosSearch } from 'react-icons/io' 
 import { useEffect, useState } from 'react'
 import { generateInputData, allPropertiesFromEncyclopediaPage } from '../../../data/autocompleteBar.js'
 import styles from './style.module.css'
@@ -45,6 +46,7 @@ function UiHeadBarForm() {
                     onChange={(event) => onChangeInput(event)}
                     className={styles.UiHeadBarForm__input}
                 />
+                <IoIosSearch className={styles.uiHeadBarForm__icon} />
             {autocompleteIsVisible && <UiHeadBarAutocomplete 
                 items={itemsFounded}
             />}
