@@ -17,13 +17,13 @@ function App() {
         changeIsShowSidebar={() => changeIsShowSidebar()}
         isShowSidebar={isShowSidebar}
       />
-      <section className="App__main">
+      <div className="App__main">
         <UiHeadBar 
           changeIsShowSidebar={() => changeIsShowSidebar()}
           isShowSidebar={isShowSidebar}
         />
         <Outlet />
-      </section>
+      </div>
     </div>
   )
 }
