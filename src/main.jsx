@@ -10,6 +10,7 @@ import App from './App'
 import UiCategoriesSamples, {loader as sampleLoader} from './pages/categories/samples/UiCategoriesSamples'
 import UiErrorDetailsPage from './pages/error/details/UiErrorDetailsPage'
 import UiErrorMainPage from './pages/error/main/UiErrorMainPage'
+import UiHomePage from './pages/home/UiHomePage'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <UiErrorMainPage />,
     children: [
+      {
+        path: "/",
+        element: <UiHomePage />,
+        errorElement: <UiErrorMainPage />,
+      }, 
       {
         path: "ref/:categorySlug",
         element: <UiEncyclopediaPage />,
