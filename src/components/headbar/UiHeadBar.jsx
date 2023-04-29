@@ -9,7 +9,8 @@ function UiHeadBar(props) {
     const headline = (props.headline) ? props.headline : "categories details"
 
     return (
-        <section className={styles.uiHeadBar}>
+        <section className={styles.uiHeadBar}
+                id="uiHeadBarID">
             <div className={styles.uiHeadBar__row}>
                 <div className={styles.uiHeadBar__head}>
                     <h1 className={`${styles.uiHeadBar__headline} capitalize`}>{headline}</h1>
