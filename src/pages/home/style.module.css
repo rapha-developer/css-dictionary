@@ -1,0 +1,47 @@
+.uiHome {
+    --gap: 110px;
+    padding-block: var(--spc__scale-12);
+    margin-inline: var(--spc__scale-4);
+    display: grid;
+    gap: var(--gap);
+}
+.uiHome__head {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.uiHome__image {
+    max-height: 270px;
+    margin-bottom: var(--spc__scale-6);
+}
+.uiHome__headline {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__scale--h2);
+    font-weight: var(--fw__bold);
+    color: hsl(var(--clr__text--100));
+    margin-bottom: var(--spc__scale-6);
+    text-align: center;
+}
+.uiHome__description {
+    --max__width: 900px;
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p1);
+    font-weight: var(--fw__medium);
+    color: hsl(var(--clr__text--400));
+    max-width: var(--max__width);
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: var(--spc__scale-10);
+}
+.uiHome__iconDown {
+    width: 36px;
+    height: 36px;
+    font-size: var(--fs__body--p1);
+    font-weight: var(--fw__semiBold);
+    color: hsl(var(--clr__text--200));
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.uiHome__iconDown:hover {
+    color: hsl(var(--clr__primary--200));
+}
