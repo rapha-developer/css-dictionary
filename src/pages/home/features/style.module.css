@@ -10,6 +10,7 @@
     font-size: var(--fs__scale--h3);
     font-weight: var(--fw__semiBold);
     color: hsl(var(--clr__text--200));
+    text-align: center;
 }
 .UiHomeFeatures__description {
     font-family: var(--ff__inter, sans-serif);
