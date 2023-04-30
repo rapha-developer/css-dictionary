@@ -5,8 +5,7 @@ import UiButtonMenu from '../ui/button/menu/UiButtonMenu'
 import UiHeadBarForm from './form/UiHeadBarForm'
 import styles from './style.module.css'
 
-function UiHeadBar(props) {
-    const headline = (props.headline) ? props.headline : "categories details"
+function UiHeadBar({headline, isShowSidebar, changeIsShowSidebar}) {
 
     return (
         <section className={styles.uiHeadBar}
@@ -22,8 +21,8 @@ function UiHeadBar(props) {
                         text={createUiButtonBar.text}
                     />
                     <UiButtonMenu 
-                        isShowSidebar={props.isShowSidebar}
-                        changeIsShowSidebar={props.changeIsShowSidebar}
+                        isShowSidebar={isShowSidebar}
+                        changeIsShowSidebar={changeIsShowSidebar}
                     />
                 </div>
             </div>
