@@ -1,0 +1,8 @@
+.uiFooter {
+    margin: var(--spc__scale-15) var(--spc__scale-4);
+    width: auto;
+    --gap: var(--spc__scale-10);
+    display: grid;
+    justify-items: center;
+    gap: var(--gap);
+}
