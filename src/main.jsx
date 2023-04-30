@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 import UiEncyclopediaPage, {loader as encyclopediaLoader} from './pages/encyclopedia/UiEncyclopediaPage'
 import UiCategoriesDetailsPage from './pages/categories/details/UiCategoriesDetailsPage'
-import App from './App'
+import App,{loader as appLoader} from './App'
 import UiCategoriesSamples, {loader as sampleLoader} from './pages/categories/samples/UiCategoriesSamples'
 import UiErrorDetailsPage from './pages/error/details/UiErrorDetailsPage'
 import UiErrorMainPage from './pages/error/main/UiErrorMainPage'
@@ -17,6 +17,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     errorElement: <UiErrorMainPage />,
+    loader: appLoader,
     children: [
       {
         path: "/",
