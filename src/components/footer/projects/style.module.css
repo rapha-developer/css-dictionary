@@ -1,0 +1,12 @@
+.UiFooterProjects__list {
+    --gap: var(--spc__scale-3);
+    display: grid;
+    gap:var(--gap);
+}
+@media screen and (min-width: 540px) {
+    .UiFooterProjects__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap:var(--gap);
+    }
+}
