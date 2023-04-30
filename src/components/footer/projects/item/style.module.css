@@ -1,0 +1,27 @@
+.UiFooterProjects__trace {
+    display: none;
+}
+@media screen and (min-width: 540px){
+    .UiFooterProjects__link {
+        --gap: var(--spc__scale-3);
+        display: flex;
+        gap:var(--gap);
+    }
+    .UiFooterProjects__trace {
+        display: block;
+        font-weight: var(--fw__bold);
+        color: hsl(var(--clr__text--100));
+    }
+}
+.UiFooterProjects__name {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p1);
+    font-weight: var(--fw__medium);
+    color: hsl(var(--clr__text--400));
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+.UiFooterProjects__name:hover {
+    color: hsl(var(--clr__text--300));
+    text-decoration: underline;
+}
