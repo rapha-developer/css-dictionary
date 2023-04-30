@@ -5,6 +5,7 @@ import UiSidebar from './components/sidebar/UiSidebar';
 import UiHeadBar from './components/headbar/UiHeadBar';
 import { Outlet } from 'react-router-dom'
 import './App.css'
+import UiFooter from './components/footer/UiFooter';
 
 function App() {
   const [isShowSidebar, setIsShowSidebar] = useState(false)
@@ -23,6 +24,7 @@ function App() {
           isShowSidebar={isShowSidebar}
         />
         <Outlet />
+        <UiFooter />
       </div>
     </div>
   )
