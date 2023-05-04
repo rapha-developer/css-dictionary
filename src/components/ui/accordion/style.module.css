@@ -24,7 +24,7 @@
 	height: 21px;
 	color: hsl(var(--clr__text--400));
 }
-.accordionButton[aria-selected="true"] {
+.accordionButton[aria-expanded="true"] {
     background: hsl(var(--bg__primary--300));
 }
 .accordionLabel__iconRight {
@@ -37,7 +37,7 @@
     overflow: hidden;
     transition: max-height 0.4s ease-in;
 }
-.accordionButton[aria-selected="true"] + .accordion__content {
+.accordionButton[aria-expanded="true"] + .accordion__content {
     --max__height: 500px;
     max-height: var(--max__height);
 }
