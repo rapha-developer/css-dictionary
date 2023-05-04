@@ -33,21 +33,32 @@ function UiAccordion(props) {
     }
     const accordionHeadIcon = changeAccordionHeadIcon()
     const accordionArrowIcon = changeArrowIcon()
+    const ariaControls = props.title.replaceAll(" ", "-")
+    const ariaState = (isAccordionOpen) ? "open" : "closed"
     return (
         <div className={styles.accordion}>
-        <button className={`${styles.accordionButton} capitalize`}
-            aria-selected={isAccordionOpen}
-            aria-controls={`accordion-list-${props.title}`}
-            onClick={changeIsAccordionOpen}>
-            {accordionHeadIcon} {props.title} {accordionArrowIcon}
-        </button>
-        <div className={styles.accordion__content}
-            data-visible={isAccordionOpen} 
-            id={`accordion-list-${props.title}`}>
-            <ul className={styles.accordionMenu__list}>
-                {accordion__items}
-            </ul>
-        </div>
+            <button type="button" 
+                aria-controls={`accordion-list-${ariaControls}`} 
+                aria-expanded={isAccordionOpen} 
+                data-state={ariaState} 
+                data-orientation="vertical" 
+                id={`accordion-list-${ariaControls}-label`} 
+                className={`${styles.accordionButton} capitalize`}
+                onClick={changeIsAccordionOpen} 
+                data-radix-collection-item="">
+                {accordionHeadIcon} {props.title} {accordionArrowIcon}
+            </button>
+            <div data-state={ariaState} 
+                data-visible={isAccordionOpen}
+                id={`accordion-list-${ariaControls}`} 
+                role="region" 
+                aria-labelledby={`accordion-list-${ariaControls}-label`} 
+                data-orientation="vertical" 
+                className={styles.accordion__content}>
+                <ul className={styles.accordionMenu__list}>
+                    {accordion__items}
+                </ul>
+            </div>
     </div>
     )
 }
