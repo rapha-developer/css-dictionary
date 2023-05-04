@@ -5,7 +5,7 @@
     font-family: var(--ff__inter, sans-serif);
     font-size: var(--fs__small--p3);
     font-weight: var(--fw__regular);
-    color: hsla(var(--clr__text--300));
+    color: hsla(var(--clr__text--100));
     letter-spacing: 1px;
     margin-bottom: var(--spc__scale-4);
 }

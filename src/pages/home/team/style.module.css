@@ -19,7 +19,7 @@
     font-family: var(--ff__inter, sans-serif);
     font-size: var(--fs__small--p1);
     font-weight: var(--fw__medium);
-    color: hsl(var(--clr__text--400));
+    color: hsl(var(--clr__text--300));
     text-align: center;
 }
 .uiHomeTeam__team {
