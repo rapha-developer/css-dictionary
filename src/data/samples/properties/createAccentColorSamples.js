@@ -22,6 +22,16 @@ const createAccentColorSamples = {
                 description: "Esta propriedade altera a cor de destaque de um botão de radio (radio button) para a cor azul" 
             }
         },
+        {
+            id: "3",
+            title: "Accent color with Range ",
+            date: 'today, AT 10 AM',
+            description: "This property change the accent color of an range element for the yellow color",
+            sample: {
+                title: "Example",
+                description: "Esta propriedade altera a cor de destaque de um intervalo HTML (range) para a cor amarela" 
+            }
+        },
     ]
 }
 export {
