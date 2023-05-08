@@ -4,22 +4,22 @@ const createAlignContentSamples = {
     samples: [
         {
             id: "1",
-            title: "Align content samples",
+            title: "Align content at start",
             date: 'today, AT 10 AM',
-            description: "A server-side PHP script to send emails when a form is submitted",
+            description: "This property specifies how flex lines are distributed at start the cross axis in a flexbox container.",
             sample: {
                 title: "Examples",
-                description: "This script is an interface between the form on your page and the MailChimp API." 
+                description: "Esta propriedade especifica como as linhas flexíveis são distribuídas no início do eixo transversal em um container flexbox." 
             }
         },
         {
             id: "2",
-            title: "Align content samples 2",
+            title: "Align content to center",
             date: 'today, AT 10 AM',
-            description: "A server-side PHP script to send emails when a form is submitted 2",
+            description: "This property specifies how flex lines are distributed at the center of the cross axis in a flexbox container.",
             sample: {
                 title: "Examples 2 ",
-                description: "This script is an interface between the form on your page and the MailChimp API. 2" 
+                description: "Esta propriedade especifica como as linhas flexíveis são distribuídas no centro do eixo transversal em um container flexbox." 
             }
         },
     ]
