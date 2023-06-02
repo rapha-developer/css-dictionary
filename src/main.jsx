@@ -5,7 +5,7 @@ import {
   RouterProvider
 } from 'react-router-dom'
 import UiEncyclopediaPage, {loader as encyclopediaLoader} from './pages/encyclopedia/UiEncyclopediaPage'
-import UiCategoriesDetailsPage from './pages/categories/details/UiCategoriesDetailsPage'
+import UiCategoriesDetailsPage, {loader as detailsLoader} from './pages/categories/details/UiCategoriesDetailsPage'
 import App,{loader as appLoader} from './App'
 import UiCategoriesSamples, {loader as sampleLoader} from './pages/categories/samples/UiCategoriesSamples'
 import UiErrorDetailsPage from './pages/error/details/UiErrorDetailsPage'
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         path: "ref/:category/:propertyName/:propertyID",
         element: <UiCategoriesDetailsPage />,
         errorElement: <UiErrorDetailsPage />,
-        loader: sampleLoader
+        loader: detailsLoader
       }
     ]
   }
