@@ -16,11 +16,12 @@ function UiCategoriesSamples() {
 		return ImportedComponent;
 	}
 
-	const snippet__list = responseAllSamples.data.map((snippetItem) => {
+	const snippet__list = responseAllSamples.data.map((snippetItem, snippetOrder) => {
+		const one = 1;
 		const ComponentSample = importComponentByLazy(
 			params.category,
 			params.propertyName,
-			snippetItem.id
+			snippetOrder + one
 		);
 		const fullPath = `${location.pathname}/${snippetItem.id}`;
 		const dateTime = `${snippetItem.attributes.created_at.date}, ${snippetItem.attributes.created_at.time}`
