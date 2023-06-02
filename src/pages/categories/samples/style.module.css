@@ -68,8 +68,9 @@
     margin-bottom: var(--spc__scale-3);
 }
 .snippetItem__description {
-    font-size: var(--ff__inter, sans-serif);
+    font-family: var(--ff__inter, sans-serif);
     font-size: var(--fs__small--p1);
     font-weight: var(--fw__medium);
     color: hsla(var(--clr__text--400));
+    line-height: 1.6;
 }
