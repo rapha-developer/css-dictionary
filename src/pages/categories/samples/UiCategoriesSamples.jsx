@@ -36,7 +36,7 @@ function UiCategoriesSamples() {
 						<ComponentSample />
 					</Suspense>
 				</div>
-				<span className={`${styles.snippetItem__date}`}>
+				<span className={`${styles.snippetItem__date} uppercase`}>
 					{dateTime}
 				</span>
 				<h3 className={styles.snippetItem__title}>
