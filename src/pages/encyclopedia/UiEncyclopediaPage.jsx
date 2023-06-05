@@ -1,5 +1,4 @@
 
-import { createStartWithEncyclopediaPage } from '../../data/encyclopedia/createEncyclopediaPage'
 import { useLoaderData } from 'react-router-dom'
 import UiSubject from '../../components/ui/subject/UiSubject'
 import styles from './style.module.css'
@@ -10,7 +9,7 @@ function UiEncyclopediaPage() {
             <UiSubject 
                 key={subject.title}
                 title={subject.title}
-                collection={subject.collection}
+                letter={subject.letter}
             />
         )
     });
@@ -22,6 +21,26 @@ function UiEncyclopediaPage() {
     )
 }
 export async function loader({ params }) {
-    return createStartWithEncyclopediaPage.find((encyclopediaPart) => encyclopediaPart.slug === params.categorySlug)
+    const alphabet = alphabetData()
+    const url = alphabet[params.categorySlug].url
+
+    const response = await fetch(url);
+    const responseInJson = await response.json();
+    return {
+        title: alphabet[params.categorySlug].title,
+        items: responseInJson.data
+    }
+}
+export function alphabetData() {
+    return {
+        "css-properties": {
+            title: "CSS Properties",
+            url: `https://rapha-developer-laravel.000webhostapp.com/properties/alphabet`
+        },
+        "css-functions": {
+            title: "CSS Functions",
+            url: `https://rapha-developer-laravel.000webhostapp.com/properties/functions/alphabet`
+        }
+    }
 }
 export default UiEncyclopediaPage
