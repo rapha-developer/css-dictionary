@@ -53,12 +53,12 @@
 }
 .snippetItem__date {
     font-family: var(--ff__inter, sans-serif);
-    font-size: var(--fs__small--p3);
+    font-size: var(--fs__small--p2);
     font-weight: var(--fw__semiBold);
     color: hsla(var(--clr__primary--200));
     letter-spacing: 1px;
-    margin-bottom: var(--spc__scale-4);
     display: block;
+    margin-bottom: var(--spc__scale-5);
 }
 .snippetItem__title {
     font-family: var(--ff__inter, sans-serif);
