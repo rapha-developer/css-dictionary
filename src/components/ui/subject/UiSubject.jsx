@@ -2,7 +2,17 @@
 import { decreaseKeyToLessThanFour } from '../../../data/functions'
 import styles from './style.module.css'
 import UiSubjectItem from './item/UiSubjectItem';
-function UiSubject({title, collection}) {
+import { useEffect, useState } from 'react';
+function UiSubject({title, letter}) {
+    const [collection, setCollection ] = useState([])
+    useEffect(() => {
+        const url = `https://rapha-developer-laravel.000webhostapp.com/properties/start/${letter}`
+        fetch(url)
+        .then(res => res.json())
+        .then(response => setCollection(response.data))
+        .catch(error => alert(error));
+
+    }, []);
     const propertiesWithColors = collection.map((property, key) => {
         const colors = ["blue","green","orange","red"]
         return {
@@ -13,10 +23,10 @@ function UiSubject({title, collection}) {
     const items = propertiesWithColors.map((property) => {
         return (
             <UiSubjectItem 
-                key={property.name}
-                slug={property.slug}
+                key={property.slug.name}
+                slug={property.slug.name}
                 color={property.color}
-                name={property.name}
+                name={property.attributes.name}
             />
         )
     });
