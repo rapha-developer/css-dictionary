@@ -3,10 +3,11 @@ import styles from './style.module.css'
 function UiHeadBarAutocomplete({items}) {
     const noPropertyFound = (items.length === 0) ? true : false
     const autocomplete__items = items.map((item, key) => {
-        const url = `/ref/${item.category}/${item.slug}`
+        const url = `/ref/${item.slug.category}/${item.slug.name}`
         return (
-            <li className={styles.uiHeadBarAutocomplete__item} key={key}>
-                <a href={url} className={styles.uiHeadBarAutocomplete__link}>{item.slug}</a>
+            <li className={styles.uiHeadBarAutocomplete__item} key={item.id}>
+                <a href={url} 
+                    className={styles.uiHeadBarAutocomplete__link}>{item.attributes.name}</a>
             </li>
         )
     });
