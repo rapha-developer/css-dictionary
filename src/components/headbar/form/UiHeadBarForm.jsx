@@ -1,14 +1,10 @@
 
 import { IoIosSearch } from 'react-icons/io' 
 import { useEffect, useState } from 'react'
-import { generateInputData, allPropertiesFromEncyclopediaPage } from '../../../data/autocompleteBar.js'
+import { generateInputData } from '../../../data/autocompleteBar.js'
 import styles from './style.module.css'
 import UiHeadBarAutocomplete from '../autocomplete/UiHeadBarAutocomplete'
 function UiHeadBarForm() {
-    const [saveResponseAPI, setSaveResponseAPI] = useState([])
-    useEffect(() => {
-        setSaveResponseAPI(allPropertiesFromEncyclopediaPage())
-    }, [])
 
     const [formData, setFormData] = useState(generateInputData())     
     function onChangeInput(event) {
@@ -20,14 +16,16 @@ function UiHeadBarForm() {
             }
         });
     }
-    function filterPropertiesBySearchInput() {
-        return saveResponseAPI.filter((item) => item.slug.substring(0, formData.value.length).toLowerCase() === formData.value)
-    }
     const [itemsFounded, setItemsFounded] = useState([])
+    async function filterPropertiesBySearchInput() {
+        const url = `https://rapha-developer-laravel.000webhostapp.com/properties/autocomplete/${formData.value}`
+        await fetch(url)
+        .then(res => res.json())
+        .then(response => setItemsFounded(response.data));
+    }
     useEffect(() => {
         if (formData.value.length === 0) return;
-        const itemsAfterFilter = filterPropertiesBySearchInput()
-        setItemsFounded(itemsAfterFilter)
+        filterPropertiesBySearchInput()
     }, [formData.value])
 
     const autocompleteIsVisible = (formData.value.length > 0) ? true : false
