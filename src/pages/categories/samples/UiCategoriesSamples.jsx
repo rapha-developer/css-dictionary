@@ -18,18 +18,19 @@ function UiCategoriesSamples() {
 
 	const snippet__list = responseAllSamples.data.map((snippetItem, snippetOrder) => {
 		const one = 1;
+		const libraryID = snippetOrder + one 
 		const ComponentSample = importComponentByLazy(
 			params.category,
 			params.propertyName,
-			snippetOrder + one
+			libraryID
 		);
-		const fullPath = `${location.pathname}/${snippetItem.id}`;
+		const fullPath = `${location.pathname}/${libraryID}`;
 		const dateTime = `${snippetItem.attributes.created_at.date}, ${snippetItem.attributes.created_at.time}`
 		return (
 			<a
 				href={fullPath}
 				className={styles.snippetItem}
-				key={snippetItem.id}
+				key={snippetOrder}
 			>
 				<div className={styles.snippetItem__thumbnail}>
 					<Suspense fallback={<UiLoading />}>
