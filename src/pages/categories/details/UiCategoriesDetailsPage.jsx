@@ -16,7 +16,7 @@ function UiCategoriesDetailsPage() {
     return (
         <section className={styles.uiCategoriesDetails}>
             <div className={styles.uiCategoriesDetails__head}>
-                <h2 className={`${styles.uiCategories__title} capitalize`}>
+                <h2 className={styles.uiCategories__title}>
                     {responseSingleSample.data.attributes.title}
                 </h2>
                 <p className={styles.uiCategories__description}>
