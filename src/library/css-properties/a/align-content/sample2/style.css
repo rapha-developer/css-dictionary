@@ -1,5 +1,5 @@
 .prop2Sample2Container {
-    max-width: 102px;
+    max-width: 172px;
     height: 300px;
     background: white;
     margin: 16px;
@@ -22,4 +22,10 @@
 }
 .prop2Sample2Box[data-color="pink"] {
     background-color:pink;
+}
+.prop2Sample2Box[data-color="aqua"] {
+    background-color: aquamarine;
+}
+.prop2Sample2Box[data-color="brown"] {
+    background-color: brown;
 }
