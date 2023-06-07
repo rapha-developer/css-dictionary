@@ -1,0 +1,31 @@
+.prop2Sample3Container {
+    max-width: 172px;
+    height: 300px;
+    background: white;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+}
+.prop2Sample3Box {
+    width: 70px;
+    height: 70px;
+}
+.prop2Sample3Box[data-color="coral"] {
+    background-color:coral;
+}
+.prop2Sample3Box[data-color="lightblue"] {
+    background-color:lightblue;
+}
+.prop2Sample3Box[data-color="pink"] {
+    background-color:pink;
+}
+.prop2Sample3Box[data-color="aqua"] {
+    background-color: aquamarine;
+}
+.prop2Sample3Box[data-color="brown"] {
+    background-color: brown;
+}
