@@ -8,7 +8,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    align-content: baseline;
+    align-content: start;
 }
 .prop2Sample1Box {
     width: 70px;
