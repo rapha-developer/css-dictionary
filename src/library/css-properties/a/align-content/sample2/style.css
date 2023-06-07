@@ -1,0 +1,25 @@
+.prop2Sample2Container {
+    max-width: 102px;
+    height: 300px;
+    background: white;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.prop2Sample2Box {
+    width: 70px;
+    height: 70px;
+}
+.prop2Sample2Box[data-color="coral"] {
+    background-color:coral;
+}
+.prop2Sample2Box[data-color="lightblue"] {
+    background-color:lightblue;
+}
+.prop2Sample2Box[data-color="pink"] {
+    background-color:pink;
+}
