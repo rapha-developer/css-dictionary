@@ -54,6 +54,7 @@
     font-size: var(--fs__small--p2);
     font-weight: var(--fw__regular);
     color: hsl(var(--clr__text--300));
+    line-height: 1.7;
     margin-bottom: var(--spc__scale-8);
 }
 .uiCategoriesExample__sample {
