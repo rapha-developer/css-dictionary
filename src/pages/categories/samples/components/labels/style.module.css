@@ -1,0 +1,46 @@
+.uiCategoriesSamples__labels {
+    --gap: var(--spc__scale-10);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    margin-block: var(--spc__scale-8);
+}
+.uiSamplesLabels__item {
+    --gap: var(--spc__scale-3);
+    display: grid;
+    gap: var(--gap);
+}
+.samplesLabels__title {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__medium);
+    color: hsl(var(--clr__text--400));
+    letter-spacing: 1px;
+}
+.samplesLabels__category {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__medium);
+    color: hsl(var(--bg__primary--400));
+    padding: var(--spc__scale-2) var(--spc__scale-3);
+    background: hsl(var(--clr__primary--200));
+    border-radius: var(--spc__scale-4);
+}
+.samplesLabels__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: var(--spc__scale-2);
+}
+.samplesLabels__created {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__medium);
+    color: hsl(var(--clr__text--300));
+    padding: var(--spc__scale-2) var(--spc__scale-3);
+    background: hsl(var(--bg__primary--300));
+    border-radius: var(--spc__scale-4);
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
