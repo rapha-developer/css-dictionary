@@ -1,74 +1,81 @@
-import { useLoaderData, useLocation, useParams } from "react-router-dom";
-import { lazy, Suspense, useState } from "react";
-import UiLoading from "../../../components/ui/loading/UiLoading";
+import { 
+	useLoaderData, 
+	useLocation, 
+	useParams } from "react-router-dom";
+import { makeHistoricPaths } from './utils/makeHistoricPaths'
+import UiCategoriesSamplesImport from "./components/import/UiCategoriesSamplesImport";
+import UiHistoricPath from './../../../components/ui/historicPath/UiHistoricPath';
+import UiCategoriesSamplesHeadline from "./components/headline/UiCategoriesSamplesHeadline";
+import UiCategoriesSamplesLabels from "./components/labels/UiCategoriesSamplesLabels";
+import UiCategoriesSamplesImportDoc from "./components/doc/UiCategoriesSamplesImportDoc";
 import styles from "./style.module.css";
+
 function UiCategoriesSamples() {
 	const responseAllSamples = useLoaderData();
-	const name = responseAllSamples.data[0].relationships.name
 	const location = useLocation();
 	const params = useParams();
-	function importComponentByLazy(category, propertyName, propertyID) {
-		const ImportedComponent = lazy(() =>
-			import(
-				`../../../library/${category}/a/${propertyName}/sample${propertyID}/thumbnail/SampleThumbnail.jsx`
-			)
-		);
-		return ImportedComponent;
-	}
 
-	const snippet__list = responseAllSamples.data.map((snippetItem, snippetOrder) => {
+	const snippet__list = responseAllSamples.samples.data.map((snippetItem, snippetOrder) => {
 		const one = 1;
-		const libraryID = snippetOrder + one 
-		const ComponentSample = importComponentByLazy(
-			params.category,
-			params.propertyName,
-			libraryID
-		);
-		const fullPath = `${location.pathname}/${libraryID}`;
-		const dateTime = `${snippetItem.attributes.created_at.date}, ${snippetItem.attributes.created_at.time}`
+		const libraryID = snippetOrder + one;
+		const snippetUrl = `${location.pathname}/${libraryID}`;
 		return (
-			<a
-				href={fullPath}
-				className={styles.snippetItem}
-				key={snippetOrder}
-			>
-				<div className={styles.snippetItem__thumbnail}>
-					<Suspense fallback={<UiLoading />}>
-						<ComponentSample />
-					</Suspense>
-				</div>
-				<span className={`${styles.snippetItem__date} uppercase`}>
-					{dateTime}
-				</span>
-				<h3 className={styles.snippetItem__title}>
-					{snippetItem.attributes.title}
-				</h3>
-				<p className={styles.snippetItem__description}>
-					{snippetItem.attributes.description}
-				</p>
-			</a>
-		);
+			<UiCategoriesSamplesImport 
+				params={params}
+				libraryID={libraryID}
+				snippetUrl={snippetUrl}
+				snippetItem={snippetItem}
+				key={libraryID}
+			/>
+		)
 	});
-	const headText = `${name} documentation`;
+
+	const historicPaths = makeHistoricPaths(params.category, params.propertyName)
 	return (
 		<section className={styles.uiCategoriesSamples}>
+			<UiHistoricPath 
+					paths={historicPaths}
+			/>
 			<div className={styles.uiCategoriesSamples__head}>
-				<h2
-					className={`${styles.uiCategoriesSamples__title} capitalize`}
-				>
-					{headText}
-				</h2>
+				<UiCategoriesSamplesHeadline 
+					title={responseAllSamples.doc.data.attributes.name}
+					description={responseAllSamples.doc.data.attributes.description}
+				/>
+				<UiCategoriesSamplesLabels 
+					category={responseAllSamples.doc.data.group.category}
+					created_at={responseAllSamples.doc.data.group.created_at}
+				/>
+				<hr className={styles.hr} />
+				<UiCategoriesSamplesImportDoc 
+					params={params}
+				/>
 			</div>
-			<div className={styles.__body}>{snippet__list}</div>
+			<div className={styles.uiCategoriesSamples__body}>
+				<h5 className={styles.uiCategoriesSamples__bodyTitle}>Samples</h5>
+				<div className={styles.uiCategoriesSamples__bodyCollection}>
+					{snippet__list}
+				</div>
+			</div>
 		</section>
 	);
 }
-export async function loader({ params }) {
 
+export async function loader({ params }) {
 	const url = `https://rapha-developer-laravel.000webhostapp.com/properties/${params.propertyName}/allSamples`;
 	const responseFromApi = await fetch(url);
 	const responseInJson = await responseFromApi.json();	
-	return responseInJson;
+
+	const propertyDoc = await loaderDoc(responseInJson.data[0].relationships.id);
+	return {
+		"samples": responseInJson,
+		"doc": propertyDoc
+	}
 }
 
+async function loaderDoc(id) {
+	const url = `https://rapha-developer-laravel.000webhostapp.com/properties/${id}/doc`
+	const responseFromApi = await fetch(url);
+	const responseInJson = await responseFromApi.json();
+	return responseInJson
+}
 export default UiCategoriesSamples;
