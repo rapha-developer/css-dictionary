@@ -1,0 +1,99 @@
+.uiPropDoc__section {
+    --gap: var(--spc__scale-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    margin-bottom: var(--spc__scale-15);
+}
+.uiPropDoc__icon {
+    width: 24px;
+    height: 24px;
+    color: hsl(var(--clr__text--300));
+}
+.uiPropDoc__information {
+    --gap: var(--spc__scale-4);
+    display: grid;
+    gap: var(--gap);
+}
+.uiPropDoc__title {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__body--p1);
+    font-weight: var(--fw__semiBold);
+    color: hsl(var(--clr__text--200));
+}
+.uiPropDoc__text {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__regular);
+    color: hsl(var(--clr__text--300));
+    line-height: 25px;
+    max-width: 500px;
+}
+.uiPropDoc__list {
+    --gap: var(--spc__scale-3);
+    display: grid;
+    align-items: center;
+    gap: var(--gap);
+}
+.uiPropDoc__list--values {
+    --gap: var(--spc__scale-6);
+    display: grid;
+    align-items: center;
+    gap: var(--gap);
+    padding-top: var(--spc__scale-4);
+}
+.uiPropDoc__item {
+    --gap: var(--spc__scale-2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    align-items: center;
+}
+.uiPropDoc__item--values {
+    --gap: var(--spc__scale-2);
+    display: grid;
+    gap: var(--gap);
+}
+.uiPropDoc__itemIcon {
+    width: 16px;
+    height: 16px;
+    color: hsl(var(--clr__primary--100));
+}
+.uiPropDoc__itemText {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__regular);
+    color: hsl(var(--clr__text--200));
+    background: hsl(var(--clr__secondary--100));
+    padding: var(--spc__scale-2) var(--spc__scale-4);
+    border-radius: var(--spc__scale-2);
+}
+.uiPropDoc__itemBadge {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__medium);
+    color: hsl(var(--bg__primary--400));
+    background: hsl(var(--clr__primary--100));
+    padding: var(--spc__scale-2) var(--spc__scale-3);
+    border-radius: var(--space__base);
+    max-width: fit-content;
+}
+
+.docReadme__link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: hsl(var(--clr__text--200));
+    transition: all 0.3s ease-in;
+}
+.docReadme__link:hover {
+    color: hsl(var(--clr__primary--100));
+}
+.docReadme__mark {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__regular);
+    color: hsl(var(--clr__text--200));
+    background: hsl(var(--bg__primary--300));
+    padding: var(--space__base) var(--spc__scale-2);
+    border-radius: var(--spc__scale-2);
+}
