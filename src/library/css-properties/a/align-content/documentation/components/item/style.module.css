@@ -1,0 +1,25 @@
+.uiPropDoc__item--values {
+    --gap: var(--spc__scale-2);
+    display: grid;
+    gap: var(--gap);
+}
+.uiPropDoc__itemBadge {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__medium);
+    color: hsl(var(--bg__primary--400));
+    background: hsl(var(--clr__primary--100));
+    padding: var(--spc__scale-2) var(--spc__scale-3);
+    border-radius: var(--space__base);
+    max-width: fit-content;
+    height: 35px;
+}
+
+.uiPropDoc__itemText {
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__regular);
+    color: hsl(var(--clr__text--300));
+    line-height: 25px;
+    max-width: 500px;
+}

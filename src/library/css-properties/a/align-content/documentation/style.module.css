@@ -1,0 +1,107 @@
+.uiPropDoc {
+    margin-bottom: var(--space__base);
+    padding-inline: var(--space__base);
+    position: relative
+}
+
+/*** --------------------- 
+        UiTranslateTab
+    --------------------- ***/
+@media screen and (max-width: 350px) {
+    .uiTranslateTab {
+        width: min(100%, 200px);
+    }
+}
+.uiTranslateTab__buttons {
+    --clr__tab--violet1: hsl(252 100% 99.0%);
+    --clr__tab--violet2: hsl(252 85.1% 93.0%);
+    height: var(--spc__scale-20);
+    background: hsl(var(--bg__primary--400));
+    box-shadow: inset 0 -3px 0 0 hsl(var(--bg__primary--300));
+    display: grid;
+    gap: var(--spc__scale-2);
+}
+@media screen and (min-width: 540px) {
+    .uiTranslateTab__buttons {
+        display: flex;
+        height: var(--spc__scale-10);
+        padding-left: var(--spc__scale-3);
+    }
+}
+.uiTranslateTab__btn {
+    height: 100%;
+    all: unset;
+    appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    /* padding-inline: var(--spc__scale-2); */
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+.uiTranslateTab__btn[data-active="true"] {
+    font-weight: var(--fw__medium);
+    letter-spacing: -0.025em;
+}
+@media screen and (min-width: 540px) {
+    .uiTranslateTab__btn[data-active="true"]::before {
+        --clr__tab--violet3: hsl(252 56.0% 57.5%);
+        
+        content: '';
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: hsl(var(--clr__primary--400));
+    }
+}
+.uiTranslateTab__btn span {
+    padding: var(--spc__scale-2) var(--spc__scale-4);
+    height: 20px;
+    border-radius: var(--space__base);
+    transition: all 0.3s ease-in;
+
+    font-family: var(--ff__inter, sans-serif);
+    font-size: var(--fs__small--p2);
+    font-weight: var(--fw__semiBold);
+    color: hsl(var(--clr__text--100));
+}
+.uiTranslateTab__icon {
+    width: 16px;
+    height: 16px;
+    color: hsl(var(--clr__text--300));
+    margin-right: var(--space__base);
+}
+.uiTranslateTab__btn[data-active="true"] span {
+    color: hsl(var(--clr__primary--400) / 0.9);
+}
+.uiTranslateTab__btn[data-active="true"] span .uiTranslateTab__icon {
+    color: hsl(var(--clr__primary--100) / 0.9);
+}
+.uiTranslateTab__btn:hover span {
+    --clr__tab--blackA1: hsl(0 0% 0% / 0.047);
+    background: var(--clr__tab--blackA1);
+}
+.uiTranslateTab__content {
+    --clr__tab--violet1: hsl(252 100% 99.0%);
+
+    background: hsl(var(--bg__primary--400));
+    padding: var(--spc__scale-6) var(--spc__scale-2) var(--space__base);
+    display: none;
+    min-height: 240px;
+    transition: all 0.35s ease-in;
+
+}
+@media screen and (min-width: 768px) {
+    .uiTranslateTab__content {
+        padding: var(--spc__scale-12) var(--spc__scale-4) var(--space__base);
+    }
+}
+.uiTranslateTab__content[data-visible="true"] {
+    display: block;
+}
+.uiTranslateTab__content[data-visible="false"] {
+    display: none;
+}
