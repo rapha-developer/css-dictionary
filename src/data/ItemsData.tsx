@@ -1,7 +1,7 @@
-import { feedItem } from "../types/feedItem";
+import { feedFilterItem } from "../types/feedFilterItem";
 import { sidebarItem } from "../types/sidebarItem";
 
-export const feedItems:Array<feedItem> = [
+export const feedFilterItems:Array<feedFilterItem> = [
     {
         url: "#",
         text: "art"
