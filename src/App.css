@@ -4,25 +4,66 @@
 
 @layer base {
     :root {
-        --clr-primary-100: 227 100% 68%; 
-        --clr-primary-200: 153 59% 51%; 
-        --clr-primary-300: 40 100% 50%; 
-        --clr-primary-400: 11 100% 59%; 
-        --clr-secondary-100: 218 100% 94%; 
-        --clr-secondary-200: 155 49% 93%; 
-        --clr-secondary-300: 41 88% 94%; 
-        --clr-secondary-400: 12 100% 94%; 
-        --clr-transparent-100: 218 100% 98%; 
-        --clr-transparent-200: 154 54% 97%; 
-        --clr-transparent-300: 43 100% 97%; 
-        --clr-transparent-400: 11 100% 98%; 
-        --clr-text-100: 218 20% 25%; 
-        --clr-text-200: 219 21% 39%; 
-        --clr-text-300: 219 14% 60%; 
-        --clr-text-400: 218 14% 73%; 
+        --clr-primary-100: 249 16% 43%;
+        --clr-primary-200: 242 16% 31%;
+        --clr-primary-300: 230 5% 26%;
+        --clr-primary-400: 0 0% 22%;
+        --clr-primary-500: 242 15% 36%;
+
+        --clr-accent-100: 238 93% 62%;
+        --clr-accent-200: 249 100% 61%;
+        --clr-accent-300: 164 95% 41%;
+        --clr-accent-400: 346 73% 55%;
+        --clr-accent-500: 222 83% 98%;
+
         --bg-neutral-100: 216 14% 79%; 
         --bg-neutral-200: 228 14% 93%; 
         --bg-neutral-300: 210 25% 98%; 
-        --bg-neutral-400: 0 0% 100%;
+        --bg-neutral-400: 222 83% 98%;
+        --bg-neutral-500: 0 0% 100%;
+    }
+}
+@layer utilities {
+    .sidebar-active-shadow {
+        box-shadow: 0px 10px 20px 0px rgba(88, 92, 229, 0.25);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body,
+div,
+section,
+aside,
+main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ol,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.App {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75px auto;    
+}
+@media screen and (min-width: 640px) {
+    .App {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 150px auto;
     }
 }
