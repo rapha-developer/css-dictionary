@@ -1,4 +1,4 @@
-export type feedItem = {
+export type feedFilterItem = {
     url: string
     text: string
 }
