@@ -56,14 +56,12 @@ a {
     text-decoration: none;
 }
 .App {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 75px auto;    
+    margin-left: 4rem;
+    width: auto;
 }
 @media screen and (min-width: 640px) {
     .App {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 150px auto;
+        width: auto;
+        margin-left: 8rem;
     }
 }
