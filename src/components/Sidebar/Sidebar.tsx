@@ -5,7 +5,7 @@ import { SidebarMenu } from "./SidebarMenu";
 export const Sidebar = () => {
 
     return (
-        <aside className="w-16 sm:w-32 bg-white relative">
+        <aside className="fixed left-0 top-0 w-16 sm:w-32 bg-white">
             <div className="bg-primary-200 w-full h-28 flex items-center">
                 <SidebarLogo />
             </div>
