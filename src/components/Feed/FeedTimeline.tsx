@@ -5,7 +5,7 @@ import { FeedTimelineItem } from "./FeedTimelineItem"
 export const FeedTimeline = () => {
     const zero = 0
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-wrap gap-4 sm:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-wrap gap-4 sm:gap-6">
             {Array.isArray(timelineData) &&
                 timelineData.length > zero &&
                 timelineData.map((post) => (
