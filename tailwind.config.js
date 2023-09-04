@@ -1,3 +1,4 @@
+import plugin from 'tailwindcss/plugin';
 import colors from 'tailwindcss/colors';
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -39,6 +40,62 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addComponents, addUtilities, theme }) {
+      addComponents({
+        '.propertyCard-container::-webkit-scrollbar': {
+          '@apply w-2.5 h-2.5':{}
+        },
+        '.propertyCard-container::-webkit-scrollbar-thumb': {
+          '@apply bg-accent-300 rounded-[10px] elevation-thumb-1': {}
+        },
+        '.propertyCard-container::-webkit-scrollbar-track': {
+          '@apply bg-thumb-1': {}
+        },
+        '.propertyCard': {
+          '@apply h-80 w-96 min-w-[250px] p-6 bg-white duration-200 snap-start clear-both relative cursor-pointer': {}
+        },
+        '.propertyCard-header': {
+          '@apply mb-auto': {}
+        },
+        '.propertyCard-date': {
+          '@apply font-red-hart text-sm font-normal mb-2 text-primary-100': {}
+        },
+        '.propertyCard-name': {
+          '@apply font-red-hart text-xl font-semibold text-primary-200 duration-200': {}
+        },
+        '.propertyCard-name:hover': {
+          '@apply text-accent-300': {}
+        },
+        '.propertyCard-description': {
+          '@apply font-inter text-sm font-medium text-primary-100': {}
+        },
+      }),
+      addUtilities({
+        '.elevation-card-1': {
+          boxShadow: `-1rem 0 2rem ${theme('colors.gray.300')}`, // elevation-1
+        },
+        '.elevation-thumb-1': {
+          boxShadow: `inset 2px 2px 2px ${theme('colors.backgrounds.500')}, inset -2px -2px 2px ${theme('colors.accent.300')}`
+        },
+        '.bg-thumb-1': {
+          background: `linear-gradient(90deg, ${theme('colors.backgrounds.500')}, ${theme('colors.backgrounds.500')} 1px, ${theme('colors.gray.200')} 0, ${theme('colors.gray.200')})`
+        },
+        '.propertyCard:focus-within~.propertyCard': {
+          '@apply translate-x-[8rem]': {}
+        },
+        '.propertyCard:hover~.propertyCard': {
+          '@apply translate-x-[8rem]': {}
+        },
+        '.propertyCard:hover': {
+          '@apply translate-y-[-1rem]': {}
+        },
+        '.propertyCard:not(:first-child)': {
+          '@apply -ml-32': {}
+        },
+      })
+    }),
+    
+  ],
 }
 
