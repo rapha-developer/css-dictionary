@@ -1,6 +1,6 @@
 import './App.css'
-import { Feed } from './components/Feed'
 import { Header } from './components/Header'
+import { HomePage } from './components/Home/HomePage'
 import { Sidebar } from './components/Sidebar'
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
       <Sidebar />
       <div className="container mx-auto">
         <Header />
-        <Feed />
+        <HomePage />
       </div>
     </div> 
   )
