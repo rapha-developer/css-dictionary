@@ -38,7 +38,21 @@ export default {
       'inter': ['Inter', 'system-ui', 'sans-serif'],
       'red-hart': ['Red Hat Display', 'system-ui', 'sans-serif']
     },
-    extend: {},
+    animation: {
+      'fadeIn': 'fadeIn 1s ease-in-out'
+    },
+    extend: {
+      keyframes: {
+        fadeIn: {
+          'from': { opacity: '0', visibility: 'hidden' },
+          'to': { opacity: '1', visibility: 'block' }
+        },
+        fadeOut: {
+          'from': { opacity: '1', visibility: 'block' },
+          'to': { opacity: '0', visibility: 'hidden' }
+        }
+      },
+    },
   },
   plugins: [
     plugin(function ({ addComponents, addUtilities, theme }) {
