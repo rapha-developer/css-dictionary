@@ -3,36 +3,36 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --clr-primary-100: 249 16% 43%;
-        --clr-primary-200: 242 16% 31%;
-        --clr-primary-300: 230 5% 26%;
-        --clr-primary-400: 0 0% 22%;
-        --clr-primary-500: 242 15% 36%;
+	:root {
+		--clr-primary-100: 249 16% 43%;
+		--clr-primary-200: 242 16% 31%;
+		--clr-primary-300: 230 5% 26%;
+		--clr-primary-400: 0 0% 22%;
+		--clr-primary-500: 242 15% 36%;
 
-        --clr-accent-100: 238 93% 62%;
-        --clr-accent-200: 249 100% 61%;
-        --clr-accent-300: 164 95% 41%;
-        --clr-accent-400: 346 73% 55%;
-        --clr-accent-500: 222 83% 98%;
+		--clr-accent-100: 238 93% 62%;
+		--clr-accent-200: 249 100% 61%;
+		--clr-accent-300: 164 95% 41%;
+		--clr-accent-400: 346 73% 55%;
+		--clr-accent-500: 222 83% 98%;
 
-        --bg-neutral-100: 216 14% 79%; 
-        --bg-neutral-200: 228 14% 93%; 
-        --bg-neutral-300: 210 25% 98%; 
-        --bg-neutral-400: 222 83% 98%;
-        --bg-neutral-500: 0 0% 100%;
-    }
+		--bg-neutral-100: 216 14% 79%;
+		--bg-neutral-200: 228 14% 93%;
+		--bg-neutral-300: 210 25% 98%;
+		--bg-neutral-400: 222 83% 98%;
+		--bg-neutral-500: 0 0% 100%;
+	}
 }
 @layer utilities {
-    .sidebar-active-shadow {
-        box-shadow: 0px 10px 20px 0px rgba(88, 92, 229, 0.25);
-    }
+	.sidebar-active-shadow {
+		box-shadow: 0px 10px 20px 0px rgba(88, 92, 229, 0.25);
+	}
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 body,
 div,
@@ -51,17 +51,17 @@ ol,
 ul,
 li,
 a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
 }
 .App {
-    margin-left: 4rem;
-    width: auto;
+	margin-left: 4rem;
+	width: auto;
 }
 @media screen and (min-width: 640px) {
-    .App {
-        width: auto;
-        margin-left: 8rem;
-    }
+	.App {
+		width: auto;
+		margin-left: 8rem;
+	}
 }
