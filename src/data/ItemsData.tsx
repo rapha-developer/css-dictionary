@@ -22,7 +22,7 @@ export const feedFilterItems:Array<feedFilterItem> = [
 
 export const sidebarItems:Array<sidebarItem> = [
     {
-        url: "#",
+        url: "/",
         text: "home",
         iconName: "home",
     },
