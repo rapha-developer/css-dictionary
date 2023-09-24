@@ -13,7 +13,7 @@ export const SidebarMenuItem = ({ typeIcon }: Props) => {
     const activeClassNames = "w-6 h-6 hidden group-hover:block" 
     
     return (
-        <li className="py-2 px-6 hover:bg-accent-100 hover:gradient-red-line cursor-pointer relative group">
+        <li className="py-2 px-6 hover:bg-accent-200 hover:gradient-red-line cursor-pointer relative group">
             <span className="sidebar-active-line hidden group-hover:block"></span>
             {(typeIcon === "Home") && 
             <>
