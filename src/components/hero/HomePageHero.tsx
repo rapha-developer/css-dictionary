@@ -1,15 +1,14 @@
 import { ArrowDownIcon } from "../../assets/ArrowDownIcon"
+import { Hero } from "../../types/hero"
 
-type Props = {
-    title: string
-    subtitle: string
-    description: string
-}
 
-export const Hero = ({ title, subtitle, description }: Props) => {
+export const HomePageHero = ({ title, subtitle, description }: Hero) => {
     return (
-        <div className="ml-28 md:ml-32 mt-36 mb-44">
-            <span className="font-inter font-semibold uppercase text-teal-400 block mb-4">{subtitle}</span>
+        <div className="ml-28 md:ml-32 mt-36 mb-56">
+            <div className="relative mb-4 pt-14">
+                    <div className="absolute top-0 left-0 font-monoton font-normal hidden md:block text-7xl uppercase -z-[5] text-teal-400">{subtitle}</div>
+                    <span className="font-inter font-semibold inline-block text-base text-amber-400 uppercase">{subtitle}</span>
+            </div>
             <h1 className="font-inter text-3xl md:text-5xl lg:text-6xl font-bold text-white capitalize mb-5">
                 {title}
             </h1>
