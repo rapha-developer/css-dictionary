@@ -2,7 +2,7 @@ import { Hero } from "../../types/hero"
 
 export const CategoriesHero = ({ title, subtitle, description }: Hero) => {
     return (
-        <div className="categoriesHero ml-28 md:ml-32 pt-44 pb-32 z-10">
+        <div className="categoriesHero ml-28 md:ml-32 pb-2 z-10">
             <div className="categoriesHeader mb-6">
                 <div className="relative mb-4 pt-14">
                     <div className="absolute top-0 left-0 font-monoton font-normal hidden md:block text-7xl uppercase -z-[5] text-teal-400">{subtitle}</div>
