@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom"
 import { Alphabet } from "../../types/alphabet"
 
 export const CategoriesCard = ({ title, letter }: Alphabet) => {
@@ -11,7 +12,9 @@ export const CategoriesCard = ({ title, letter }: Alphabet) => {
             <div className="categoriesCard-content flex flex-col gap-4">
                 <h4 className="font-inter text-xl font-bold text-white capitalize">{title}</h4>
                 <p className="font-inter text-base font-medium text-white">{cardData.description}</p>
-                <button className="w-full px-6 py-4 btn-example font-inter font-bold text-base text-white rounded-xl text-center capitalize hover:opacity-60">{cardData.buttonText}</button>
+                <Link to={`/collection/${letter}`}>
+                    <button className="w-full px-6 py-4 btn-example font-inter font-bold text-base text-white rounded-xl text-center capitalize hover:opacity-60">{cardData.buttonText}</button>
+                </Link>
             </div> 
         </div>
     )
