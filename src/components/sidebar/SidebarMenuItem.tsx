@@ -3,18 +3,17 @@ import { BuilderLibraryActiveIcon, BuilderLibraryIcon } from "../../assets/Build
 import { CogFunctionActiveIcon, CogFunctionIcon } from "../../assets/CogFunctionIcon"
 import { HomeIcon, HomeIconActiveIcon } from "../../assets/HomeIcon"
 import { BookOpenActiveIcon, BookOpenIcon } from "../../assets/BookOpenIcon"
+import { Link } from "react-router-dom"
+import { SidebarItem } from "../../types/sidebarItem"
 
-
-type Props = {
-    typeIcon: "Home" | "BuilderLibrary" | "CogFunction" | "InformationCircle" | "BookOpen" | string
-}
-export const SidebarMenuItem = ({ typeIcon }: Props) => {
+export const SidebarMenuItem = ({ typeIcon, url }: SidebarItem) => {
     const iconClassNames = "w-6 h-6 text-teal-400 block group-hover:hidden" 
     const activeClassNames = "w-6 h-6 hidden group-hover:block" 
     
     return (
         <li className="py-2 px-6 hover:bg-accent-200 hover:gradient-red-line cursor-pointer relative group">
             <span className="sidebar-active-line hidden group-hover:block"></span>
+            <Link to={url}>
             {(typeIcon === "Home") && 
             <>
                 <HomeIcon 
@@ -65,6 +64,7 @@ export const SidebarMenuItem = ({ typeIcon }: Props) => {
                 />
             </>
             }
+            </Link>
         </li>
     )
 }
