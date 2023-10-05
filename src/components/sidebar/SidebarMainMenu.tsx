@@ -13,6 +13,7 @@ export const SidebarMainMenu = () => {
                 <SidebarMenuItem 
                     key={`kSidebarItem-${sidebarItem.typeIcon}`}
                     typeIcon={sidebarItem.typeIcon}
+                    url={sidebarItem.url}
                 />
             ))
             }
