@@ -1,4 +1,4 @@
-import { CoursesFilter } from "./CoursesFilter"
+import { CoursesGrid } from "./CoursesGrid"
 import { CoursesHero } from "./CoursesHero"
 import { CoursesMiseEnScene } from "./CoursesMiseEnScene"
 
@@ -13,7 +13,7 @@ export const Courses = () => {
                     titlePage="property courses"
                 />
             </div>
-            <CoursesFilter />
+            <CoursesGrid />
         </>
     )
 }
