@@ -3,6 +3,7 @@ import './App.css'
 import { HomePage } from './components/home/HomePage'
 import { Sidebar } from './components/sidebar'
 import { HomeCourses } from './components/home/HomeCourses'
+import { HomeProperty } from './components/home/HomeProperty'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/collection/:letter' element={<HomeCourses />} />
+        <Route path='/property/:propertyName' element={<HomeProperty />} />
         <Route path='*' element={<Navigate to="/" />} />
       </Routes> 
     </div>
