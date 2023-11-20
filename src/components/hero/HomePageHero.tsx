@@ -15,7 +15,7 @@ export const HomePageHero = ({ title, subtitle, description }: Hero) => {
             <p className="font-inter text-base font-medium text-white w-full max-w-xl mb-8">
                 {description}
             </p>
-            <button className="px-6 py-4 btn-example font-inter font-bold text-base text-white rounded-xl text-center flex capitalize hover:opacity-60">Check properties <ArrowDownIcon classNames="w-6 h-6 ml-4"/></button>
+            <button className="px-6 py-4 btn-attributes font-inter font-bold text-base text-white rounded-xl text-center flex capitalize hover:opacity-60">Check properties <ArrowDownIcon classNames="w-6 h-6 ml-4"/></button>
         </div>
     )
 }
