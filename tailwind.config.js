@@ -82,6 +82,11 @@ export default {
           'background': 'var(--gradient-100)',
           'color': 'white'
         },
+        '.btn-attributes': {
+          'background': 'var(--gradient-300)',
+          'color': 'white',
+          'transition': 'all 0.2s ease 0s'
+        },
         '.dark-gradient-categories': {
           'background': 'var(--gradient-categories-100)'
         },
