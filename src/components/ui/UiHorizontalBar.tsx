@@ -4,21 +4,6 @@ import { UiBtnAnchor } from "./UiBtnAnchor";
 
 export const UiHorizontalBar = () => {
 
-    // const buttonsData = [
-    //     {
-    //         url: "#",
-    //         text: "description"
-    //     },
-    //     {
-    //         url: "#",
-    //         text: "examples"
-
-    //     },
-    //     {
-    //         url: "#",
-    //         text: "valores"
-    //     },
-    // ];
     const buttonsData = HorizontalBarData
     return (
         <div className="ml-28 md:ml-32 mr-4 flex flex-grow justify-center bg-transparent">
