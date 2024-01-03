@@ -1,12 +1,13 @@
 import { useMemo } from 'react'
 import { useParams } from "react-router-dom"
-import { isString } from "lodash"
 import { HomePageHero } from "../hero"
 import { Header } from "../header"
 import { useFetch } from "../../hooks/useFetch"
 import { Property } from "../../types/propertyWithSlug"
 import { RocketLaunchIcon } from '../../assets/RocketLaunchIcon'
 import { PropertyMiseEnScene } from '../mise'
+import { UiHorizontalBar } from '../ui'
+import { Article } from '../article/Article'
 
 export const HomeProperty = () => {
     const params  = useParams()
@@ -17,7 +18,7 @@ export const HomeProperty = () => {
         return newURL
     }, [url])
     const { data: properties, isLoading } = useFetch<Property[]>(fetchUrl)
-    
+
     return (
         <section className="w-full min-h-screen relative">
             <PropertyMiseEnScene />
@@ -41,6 +42,8 @@ export const HomeProperty = () => {
                     </>
                 )}
             </div>
+            <UiHorizontalBar />
+            <Article />
         </section>
     )
 }
