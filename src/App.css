@@ -1,126 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-a,
-article,
-aside,
-audio,
-blockquote,
-body,
-button,
-caption,
-code,
-div,
-embed,
-figure,
-footer,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-label,
-li,
-main,
-nav,
-option,
-p,
-picture,
-progress,
-section,
-select,
-span,
-strong,
-table,
-tbody,
-td,
-th,
-thead,
-tfoot,
-ul,
-img {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  border: none;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@layer base {
-  :root {
-    --clr-dark-100: 235 50% 9%; /** #0B0D21 **/
-  
-    --clr-emerald-50: 152 81% 96%; /** #ECFDF5 **/
-    --clr-emerald-100: 149 80% 90%; /** #D1FAE5 **/
-    --clr-emerald-200: 152 76% 80%; /** #A7F3D0 **/
-    --clr-emerald-300: 156 72% 67%; /** #6EE7B7 **/
-    --clr-emerald-400: 158 64% 52%; /** #34D399 **/
-    --clr-emerald-500: 160 84% 39%; /** #10B981 **/
-    --clr-emerald-600: 161 94% 30%; /** #059669 **/
-    --clr-emerald-700: 163 94% 24%; /** #047857 **/
-    --clr-emerald-800: 163 88% 20%; /** #065F46 **/
-    --clr-emerald-900: 163 88% 20%; /** #065F46 **/
-  
-    --clr-teal-50: 166 76% 97%; /** #F0FDFA **/
-    --clr-teal-100: 167 85% 89%; /** #CCFBF1 **/
-    --clr-teal-200: 168 84% 78%; /** #99F6E4 **/
-    --clr-teal-300: 171 77% 64%; /** #5EEAD4 **/
-    --clr-teal-400: 172 66% 50%; /** #2DD4BF **/
-    --clr-teal-500: 173 80% 40%; /** #14B8A6 **/
-    --clr-teal-600: 175 84% 32%; /** #0D9488 **/
-    --clr-teal-700: 175 77% 26%; /** #0F766E **/
-    --clr-teal-800: 176 69% 22%; /** #115E59 **/
-    --clr-teal-900: 176 61% 19%; /** #134E4A **/
-  
-    --clr-gray-blue-100: 0 0% 100%; /** #FFFFFF **/
-    --clr-gray-blue-200: 220 100% 99%; /** #FCFDFF **/
-    --clr-gray-blue-300: 210 20% 98%; /** #F9FAFB **/
-    --clr-gray-blue-400: 240 12% 92%; /** #E8E8ED **/
-    --clr-gray-blue-500: 228 12% 84%; /** #D0D2DA **/
-    --clr-gray-blue-600: 229 13% 67%; /** #A1A5B6 **/
-    --clr-gray-blue-700: 232 12% 51%; /** #737791 **/
-    --clr-gray-blue-800: 231 23% 35%; /** #444A6D **/
-    --clr-gray-blue-900: 231 55% 18%; /** #151D48 **/
-  
-    --clr-accent-100: 235 46% 33%; /** #2E357B **/
-    --clr-accent-200: 235 49% 27%; /** #232966 **/
-    --clr-accent-300: 235 44% 23%; /** #212554 **/
-    
-    
-    --gradient-100: linear-gradient(162deg, #161A42 22.61%, rgba(24, 29, 74, 0.00) 118.29%);
-    --gradient-200: linear-gradient(90deg, #1FA2FF 0%, #12D8FA 50%, #A6FFCB 100%);
-    --gradient-300: linear-gradient(180deg, #3461FF 0%, #8454EB 100%);
-    --gradient-400: linear-gradient(312deg, #9796F0 -21.1%, #FBC7D4 100.37%);
-
-    --gradient-line-100: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
-    --gradient-categories-100: linear-gradient(to right, hsl(var(--clr-dark-100) / 0.6) 20%, transparent 70%);
-    --gradient-courses-100: linear-gradient(90.99deg, #FDCE39 0.27%, #FD8963 30%, #ED5174 98.69%);
-    
-    --gradient-color-100: 6 89% 51%;    /* #f12711;*/
-    --gradient-color-200: 41 92% 53%;   /* #f5af19;*/
-    --gradient-color-300: 270 100% 50%; /* #7F00FF;*/
-    --gradient-color-400: 293 100% 50%; /* #E100FF;*/
-    
-    --gradient-card-100: linear-gradient(to bottom left, hsl(var(--gradient-color-100)), hsl(var(--gradient-color-200)));
-    --gradient-card-200: linear-gradient(to bottom left, hsl(var(--gradient-color-300)), hsl(var(--gradient-color-400)));
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
-body {
-  background: hsl(var(--clr-dark-100));
-  width: 100%;
-  min-height: 100vh;
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-.btn-example {
-  background: var(--gradient-300);
-  transition: all 0.2s ease 0s;
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }
