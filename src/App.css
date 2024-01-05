@@ -2,3 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --clr-body-color: 232 16% 37%; /*#4f536c */
+    --clr-body-two-color: 45 29% 97%; /*#faf9f6 */
+    --clr-primary-color: 248 79% 58%; /*#543ee8 */
+    --clr-secondary-color: 261 53% 17%; /*#241442 */
+    --clr-tertiary-color: 243 10% 65%; /* #9d9cae */
+    --clr-border-color: 0 0% 91%; /*#e8e8e8 */;
+    --clr-dark-color: 256 28% 8%; /*#110e19 */
+    --clr-grey-100: 0 0% 97%; /*#f8f8f8 */
+    --clr-grey-200: 245 100% 98%; /*#f4f3ff */
+    --clr-grey-300: 240 33% 98%; /*#f7f7fb */
+    --clr-grey-400: 0 0% 95%; /*#f3f3f3 */
+}
+body {
+    background: hsl(var(--clr-body-two-color));
+}
+.background-hero {
+    background: transparent;
+    background-image: linear-gradient(90deg, #5035F2 0%, #7849E4 100%);
+}
+.box-shadow-widget {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.bg-icon-widget {
+    border: 2px solid #FF9D95;
+    background-color: transparent;
+    background-image: linear-gradient(130deg, #F57064 0%, #FFD0CC 115%);
+    width: 70px;
+    height: 70px;
+}
