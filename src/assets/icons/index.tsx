@@ -1,0 +1,5 @@
+export * from './FoundationIcon'
+export * from './BookOpenIcon'
+export * from './AcademicCapIcon'
+export * from './Square3DIcon'
+export * from './NewspaperIcon'
