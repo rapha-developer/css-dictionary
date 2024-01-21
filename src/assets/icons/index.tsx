@@ -1,3 +1,5 @@
+export * from './BarIcon'
+export * from './CancelIcon'
 export * from './FoundationIcon'
 export * from './BookOpenIcon'
 export * from './AcademicCapIcon'
