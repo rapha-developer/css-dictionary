@@ -1,9 +1,4 @@
-
-type HeaderItem = {
-    url: string
-    text: string
-    outline: boolean
-}
+import { HeaderItem } from "../types/headerItem";
 
 export const HeaderItemsData: HeaderItem[] =  [
     {
