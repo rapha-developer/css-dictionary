@@ -1,11 +1,14 @@
 import { ChangeEvent, useCallback } from "react"
 import _debounce from 'lodash/debounce'
 import { MagnifyGlassIcon } from "../../assets/icons"
+import { useAtom } from "jotai"
+import { queryAtom } from "../../atoms"
 
 export const HeroSearchBar = () => {
+    const [_, setQuery] = useAtom(queryAtom)
     const onChangeHandler = useCallback(
         _debounce((event: ChangeEvent<HTMLInputElement>) => {
-            console.log({query: event.target.value })
+            setQuery(event.target.value)
         }, 500),
         []
     )
