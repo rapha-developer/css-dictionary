@@ -72,3 +72,6 @@ body {
         transition: padding 0.5s ease-in;
     }
 }
+.transition-all-card-image {
+    transition: all .21s ease-in-out;
+} 
