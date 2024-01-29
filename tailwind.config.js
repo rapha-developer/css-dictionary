@@ -33,6 +33,9 @@ export default {
         'sm': '0.938rem',
         '6xl': '3.375rem'
       },
+      lineHeight: {
+        'normal': '1.4'
+      },
     },
   },
   plugins: [],
