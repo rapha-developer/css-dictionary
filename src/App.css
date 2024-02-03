@@ -75,3 +75,15 @@ body {
 .transition-all-card-image {
     transition: all .21s ease-in-out;
 } 
+
+@layer utilities {
+    .add-effect-gray-in-image {
+        filter: grayscale(1);
+        transition: all ease .21s;
+        opacity: .5;
+    }
+    .remove-effect-gray-in-image {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+}
