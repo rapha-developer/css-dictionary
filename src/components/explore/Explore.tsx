@@ -1,5 +1,5 @@
 import { ExploreHeroData } from "../../data/ExploreHeroData"
-import { ExportHero } from "./ExploreHero"
+import { ExploreHero } from "./ExploreHero"
 import { ExploreRecommendations } from "./ExploreRecommendations"
 
 export const Explore = () => {
@@ -12,7 +12,7 @@ export const Explore = () => {
                     <img src="/explore-hero-img1.png" 
                         alt="Woman with notebook (Mulher com notebook)" 
                         className="w-full md:max-w-[275px] lg:max-w-[545px] h-fit" />
-                    <ExportHero 
+                    <ExploreHero 
                         text={heroData.text}
                         subtitle={heroData.subtitle}
                         title={heroData.title}
