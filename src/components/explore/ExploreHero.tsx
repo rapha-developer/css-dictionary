@@ -1,6 +1,6 @@
 import { exploreHeroGroup } from "../../types/exploreHeroGroup"
 
-export const ExportHero = ({title, text, subtitle, button }: exploreHeroGroup) => {
+export const ExploreHero = ({title, text, subtitle, button }: exploreHeroGroup) => {
     
     return (
         <div className="explore-hero max-w-xl">
