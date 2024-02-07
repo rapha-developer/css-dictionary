@@ -16,9 +16,11 @@ export const WidgetCallToAction = ({ title, button }: widgetToActionProps) => {
                         <img src="call-shape-action.svg" 
                             alt="Various geometric figures"
                             className="absolute bottom-0 left-0 w-full sm:w-[378px] h-[198px] -z-50" />
-                        <img src="/call-action-img1.png" 
-                            alt="Girl Graduating (Garota se graduando)"
-                            className="absolute bottom-0 left-28 md:left-32 lg:left-12 xl:left-32  w-fit h-[256px] -z-40" />
+                        <div className="w-full h-auto -z-40 flex justify-center">
+                                <img src="/call-action-img1.png"  
+                                    alt="Girl Graduating (Garota se graduando)" 
+                                    className=" w-fit h-[256px]" />
+                        </div>
                     </div>
                     <div className="max-w-[550px] xl:max-w-[750px] flex items-center pb-4">
                         <h2 className="font-outfit text-3xl md:text-4xl font-semibold text-white leading-10 text-center lg:text-start capitalize">{title}</h2>
