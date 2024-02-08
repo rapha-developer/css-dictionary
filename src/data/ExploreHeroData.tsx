@@ -10,3 +10,14 @@ export const ExploreHeroData:  exploreHeroGroup =  {
         signal: " ➔"
     }
 }
+
+export const ExploreTeacherData:  exploreHeroGroup =  {
+    subtitle: "become an instructor",
+    title: "let’s join us & spread your knowledge",
+    text: "when an unknown printer took a galley offer area type and scrambled to make a type specimen bookan uUnknown printer took alley ffer area typey and scrambled to make a type specimen book hass",
+    button: {
+        url: "#",
+        text: "become an instructor",
+        signal: " ➔"
+    }
+}
