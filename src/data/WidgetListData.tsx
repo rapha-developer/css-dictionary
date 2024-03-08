@@ -45,3 +45,27 @@ export const WidgetListData: WidgetElement[] =  [
         url: "#"
     } 
 ];
+
+export const WidgetFilterListData: WidgetElement[] =  [
+    {
+        heading: 'css properties',
+        description: '3 courses',
+        iconColor: 'purple',
+        iconType: iconTypeLabels.square,
+        url: "#"
+    },
+    {
+        heading: 'css selectors',
+        description: '2 courses',
+        iconColor: 'red',
+        iconType: iconTypeLabels.book,
+        url: "#"
+    },
+    {
+        heading: 'css functions',
+        description: '2 courses',
+        iconColor: 'pink',
+        iconType: iconTypeLabels.academic,
+        url: "#"
+    }
+];
