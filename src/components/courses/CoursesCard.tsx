@@ -12,7 +12,7 @@ export const CoursesCard = ({image, category, title, url, author, price }: Cours
                     />
                 </a>
             </div>
-            <span className="inline-block border-2 border-solid border-borderLine text-body-100 text-sm rounded-md leading-normal py-1 px-3 capitalize cursor-pointer mb-3 hover:bg-primary hover:text-white">
+            <span className="inline-block border-2 border-solid border-borderLine font-outfit text-body-100 text-sm rounded-md leading-normal py-1 px-3 capitalize cursor-pointer mb-3 hover:bg-primary hover:text-white">
                 {category}
             </span>
             <h3 className="font-outfit text-xl font-semibold text-secondary leading-normal capitalize mb-6 cursor-pointer hover:text-primary">{title}</h3>
