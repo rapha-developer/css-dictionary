@@ -8,4 +8,5 @@ export type CourseCard = {
         name: string
     },
     price: "free" | "paid"
+    numberLessons?: string | null
 }
