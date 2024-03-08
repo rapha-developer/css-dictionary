@@ -1,5 +1,5 @@
 import { courseHero } from "../../types/courseHero"
-import { WidgetFilterContainer } from "../widgets/WidgetFilterContainer"
+import { WidgetFilterContainer } from "../widgets"
 
 
 export const CoursesLessonsHero = ({ title, subtitle }: courseHero) => {
@@ -10,7 +10,7 @@ export const CoursesLessonsHero = ({ title, subtitle }: courseHero) => {
             <img src="/active-bar.svg" 
                 alt="Yellow line" 
                 className="w-[167px] h-auto mx-auto mb-5" />
-                
+
             <WidgetFilterContainer />
         </div>
     )
