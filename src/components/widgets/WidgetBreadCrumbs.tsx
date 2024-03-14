@@ -4,7 +4,7 @@ import { widgetBreadCrumb } from "../../types/widgetBreadCrumb";
 export const WidgetBreadCrumbs = ({ actual, historic }: widgetBreadCrumb) => {
 
     return (
-        <div className="w-auto bg-dark opacity-80 h-auto py-4 px-6 rounded-xl flex gap-4 items-center">
+        <div className="w-auto bg-dark opacity-80 h-auto py-4 px-6 rounded-xl flex flex-col sm:flex-row gap-4 sm:items-center">
             {Array.isArray(historic) && 
             historic.length > 0 &&
             historic.map((historicItem) => (
