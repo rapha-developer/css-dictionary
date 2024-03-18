@@ -1,3 +1,5 @@
 export * from './WidgetFilterContainer'
 export * from './WidgetHeroContainer'
 export * from './WidgetCallToAction'
+export * from './WidgetBreadCrumbs'
+export * from './WidgetAccordion'
