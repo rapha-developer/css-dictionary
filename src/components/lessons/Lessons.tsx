@@ -12,7 +12,7 @@ export const Lessons = () => {
     const lessonsCardData = LessonsCourseHeroData
 
     return (
-        <div className="bg-gradient-to-b from-body-200 from-10% via-white via-30% to-white to-90% pt-20 pb-32 h-fit">
+        <section className="bg-gradient-to-b from-body-200 from-10% via-white via-30% to-white to-90% pt-20 pb-32 h-fit">
             <div className="container mx-auto">
                 <div className="grid lg:grid-cols-[8fr_4fr] gap-10 px-2 sm:p-4 lg:px-8">
                     <div className="lessons-main">
@@ -45,7 +45,7 @@ export const Lessons = () => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
