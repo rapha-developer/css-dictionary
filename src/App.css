@@ -86,4 +86,19 @@ body {
         filter: grayscale(0);
         opacity: 1;
     }
+    .accordion-btn[aria-selected="true"] {
+        color: white;
+        background-color: hsl(var(--clr-primary-color));
+    }
+    .accordion-list {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+    }
+    .accordion-list[aria-expanded="true"] {
+        max-height: 9999px;
+    }
+    .widget-area-box-shadow {
+        box-shadow: 0 0 20px rgba(0,0,0,5%);
+    }
 }
