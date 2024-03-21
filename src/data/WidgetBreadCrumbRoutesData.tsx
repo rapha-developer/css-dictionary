@@ -29,3 +29,20 @@ export const BreadCrumbLessonsRoute: widgetBreadCrumb =  {
         text: "lessons"
     }
 }
+
+export const BreadCrumbLecturesRoute: widgetBreadCrumb =  {
+    historic: [
+        {
+            url: "/courses",
+            text: "courses"
+        },
+        {
+            url: "/courses/courses-one",
+            text: "lessons"
+        }
+    ],
+    actual: {
+        url: "/courses/lessons/lectures-one",
+        text: "lecture"
+    }
+}
