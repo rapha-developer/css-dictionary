@@ -1,6 +1,5 @@
 import { RocketIcon } from "../../assets/icons/RocketIcon"
 
-
 export const Loading = () => {
     const message = 'Carregando...'
     return (
