@@ -102,3 +102,8 @@ body {
         box-shadow: 0 0 20px rgba(0,0,0,5%);
     }
 }
+.stripes-pink {
+    background-image: linear-gradient(135deg, #ec489980 10%, #0000 0, #0000 50%, #ec489980 0, #ec489980 60%, #0000 0, #0000);
+    background-size: 7.07px 7.07px;
+    border-radius: 0.5rem;
+}
