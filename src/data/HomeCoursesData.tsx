@@ -13,8 +13,8 @@ export const HomeCoursesData: CourseCard[] = [
     {
         image: "https://www.radiustheme.com/demo/wordpress/themes/quiklearn/wp-content/uploads/2023/07/crs_img_2-380x277.jpg",
         category: "technology",
-        title: "the complete android java developer course",
-        url: "#",
+        title: "Propriedades CSS começando com A",
+        url: "/courses/1",
         author: {
             gravatar: "https://avatars.githubusercontent.com/u/91702283?v=4",
             name: "raphael moreira"
