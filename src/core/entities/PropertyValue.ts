@@ -1,4 +1,5 @@
 import { v4 as uuidV4 } from 'uuid'
+import { PropertyValueProps } from '../../types/PropertyProps'
 
 export class PropertyValue {
     private _id: string
@@ -9,11 +10,8 @@ export class PropertyValue {
         id,
         name,
         value
-    }: {
-        id?: string,
-        name: string,
-        value: string
-    }) {
+    }: 
+    PropertyValueProps ) {
         this._id = id ?? uuidV4()
         this._name = name
         this._value = value
