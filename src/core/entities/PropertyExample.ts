@@ -1,5 +1,5 @@
 import { v4 as uuidV4 } from "uuid"
-
+import { PropertyExampleProps } from "../../types/PropertyProps"
 
 export class PropertyExample {
     private _id: string
@@ -10,11 +10,8 @@ export class PropertyExample {
         id,
         name,
         code
-    }: {
-        id: string
-        name: string
-        code: string
-    }) {
+    }: 
+    PropertyExampleProps ) {
         this._id = id ?? uuidV4()
         this._name = name
         this._code = code
