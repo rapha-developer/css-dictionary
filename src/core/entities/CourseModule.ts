@@ -11,7 +11,7 @@ export class CourseModule {
         name,
         property
     }: {
-        id: string
+        id?: string
         name: string
         property: Property
     }) {

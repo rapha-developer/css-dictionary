@@ -13,7 +13,7 @@ export class Course {
         category,
         modules
     }: {
-        id: string
+        id?: string
         name: string
         category: string
         modules: CourseModule[]
@@ -38,5 +38,8 @@ export class Course {
 
     public get modules(): CourseModule[] {
         return this._modules
+    }
+    public addModule(courseModule: CourseModule): void {
+        this._modules.push(courseModule);
     }
 }
