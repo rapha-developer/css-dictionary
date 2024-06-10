@@ -17,6 +17,7 @@ export class CourseModule {
         this._property = new Property({
             id: property?.id,
             name: property.name,
+            definition: property.definition,
             category: property.category,
             values: property.values,
             examples: property.examples
