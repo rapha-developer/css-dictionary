@@ -1,7 +1,8 @@
 
 export type PropertyProps = {
-    id?: string,
-    name: string,
+    id?: string
+    name: string
+    definition: string
     category: "css property" | "css function" | string
     values: PropertyValueProps[]
     examples: PropertyExampleProps[]
