@@ -6,6 +6,7 @@ import { PropertyExampleProps, PropertyValueProps } from "../../types/PropertyPr
 export class Property {
     private _id: string;
     private _name: string;
+    private _definition: string
     private _category: "css property" | "css function" | string
     private _values: PropertyValue[]
     private _examples: PropertyExample[]
@@ -13,18 +14,21 @@ export class Property {
     constructor({
         id, 
         name,
+        definition,
         category,
         values,
         examples,
     }: {
-        id?: string,
-        name: string,
+        id?: string
+        name: string
+        definition: string
         category: "css property" | "css function" | string
         values: PropertyValueProps[]
         examples: PropertyExampleProps[]
     }) {
         this._id = id ?? uuidV4()
         this._name = name
+        this._definition = definition
         this._category = category
         this._values = values.map((item) => new PropertyValue({
             id: item?.id,
@@ -45,7 +49,11 @@ export class Property {
     public get name(): string {
         return this._name
     }
-    
+
+    public get definition(): string {
+        return this._definition
+    }
+
     public get category(): string {
         return this._category
     }
