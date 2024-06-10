@@ -1,5 +1,6 @@
 import { v4 as uuidV4 } from "uuid"
 import { Property } from "./Property"
+import { CourseModuleProps } from "../../types/CourseProps"
 
 export class CourseModule {
     private _id: string
@@ -10,14 +11,16 @@ export class CourseModule {
         id,
         name,
         property
-    }: {
-        id?: string
-        name: string
-        property: Property
-    }) {
+    }: CourseModuleProps) {
         this._id = id ?? uuidV4()
         this._name = name
-        this._property = property
+        this._property = new Property({
+            id: property?.id,
+            name: property.name,
+            category: property.category,
+            values: property.values,
+            examples: property.examples
+        })
     }
 
     public get id(): string {

@@ -1,5 +1,6 @@
 import { v4 as uuidV4 } from "uuid"
 import { CourseModule } from "./CourseModule"
+import { CourseProps } from "../../types/CourseProps"
 
 export class Course {
     private _id: string
@@ -12,16 +13,15 @@ export class Course {
         name,
         category,
         modules
-    }: {
-        id?: string
-        name: string
-        category: string
-        modules: CourseModule[]
-    }) {
+    }: CourseProps) {
         this._id = id ?? uuidV4()
         this._name = name
         this._category = category
-        this._modules = modules
+        this._modules = modules.map((module) => new CourseModule({
+            id: module?.id,
+            name: module.name,
+            property: module.property
+        }))
     }
 
     public get id(): string {
