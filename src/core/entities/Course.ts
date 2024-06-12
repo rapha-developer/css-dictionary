@@ -7,12 +7,19 @@ export class Course {
     private _name: string
     private _category: string
     private _modules: CourseModule[]
+    private _author: {
+        name: string 
+        gravatar: string
+    }
+    private _price: string
 
     constructor({
         id,
         name,
         category,
-        modules
+        modules,
+        author,
+        price
     }: CourseProps) {
         this._id = id ?? uuidV4()
         this._name = name
@@ -22,6 +29,8 @@ export class Course {
             name: module.name,
             property: module.property
         }))
+        this._author = author
+        this._price = price
     }
 
     public get id(): string {
@@ -39,6 +48,15 @@ export class Course {
     public get modules(): CourseModule[] {
         return this._modules
     }
+
+    public get author(): CourseProps['author'] {
+        return this._author
+    }
+    
+    public get price(): string {
+        return this._price
+    }
+
     public addModule(courseModule: CourseModule): void {
         this._modules.push(courseModule);
     }
