@@ -6,6 +6,11 @@ export class CreateCourseUseCase {
     constructor(
         private name: string,
         private category: string,
+        private author: {
+            name: string
+            gravatar: string
+        },
+        private price: string,
         private modules: CourseModuleProps[],
         private id?: string
     ) {}
@@ -15,6 +20,8 @@ export class CreateCourseUseCase {
             id: this?.id,
             name: this.name,
             category: this.category,
+            author: this.author,
+            price: this.price,
             modules: this.modules
         });
     }
