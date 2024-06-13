@@ -17,3 +17,14 @@ export type CourseModuleProps = {
     name: string
     property: PropertyProps
 }
+
+export type CourseInfoProps = {
+    id?: string,
+    courseName?: string
+    resume: string
+    body: {
+        first: string,
+        second: string,
+    },
+    curriculumDesc: string
+}
