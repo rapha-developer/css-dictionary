@@ -58,19 +58,11 @@ export class Property {
         return this._category
     }
 
-    public get values(): {
-        id?: string,
-        name: string,
-        value: string
-    }[] {
+    public get values(): PropertyValue[] {
         return this._values
     }
 
-    public get examples(): {
-        id?: string
-        name: string
-        code: string
-    }[] {
+    public get examples(): PropertyExample[] {
         return this._examples
     }
 }
