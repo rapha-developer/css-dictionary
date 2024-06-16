@@ -1,6 +1,7 @@
 import { v4 as uuidV4 } from "uuid"
 import { CourseModule } from "./CourseModule"
 import { CourseProps } from "../../types/CourseProps"
+import { CourseInfo } from "./CourseInfo"
 
 export class Course {
     private _id: string
@@ -12,6 +13,7 @@ export class Course {
         gravatar: string
     }
     private _price: string
+    private _info: CourseInfo
 
     constructor({
         id,
@@ -19,7 +21,8 @@ export class Course {
         category,
         modules,
         author,
-        price
+        price,
+        info
     }: CourseProps) {
         this._id = id ?? uuidV4()
         this._name = name
@@ -31,6 +34,12 @@ export class Course {
         }))
         this._author = author
         this._price = price
+        this._info = new CourseInfo({
+            courseName: name,
+            body: info.body,
+            resume: info.resume,
+            curriculumDesc: info.curriculumDesc
+        })
     }
 
     public get id(): string {
@@ -57,6 +66,10 @@ export class Course {
         return this._price
     }
 
+    public get info(): CourseInfo {
+        return this._info
+    }
+    
     public addModule(courseModule: CourseModule): void {
         this._modules.push(courseModule);
     }
