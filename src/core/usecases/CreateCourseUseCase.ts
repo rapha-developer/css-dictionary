@@ -1,4 +1,4 @@
-import { CourseModuleProps } from "../../types/CourseProps";
+import { CourseInfoProps, CourseModuleProps } from "../../types/CourseProps";
 import { Course } from "../entities/Course";
 
 
@@ -12,6 +12,7 @@ export class CreateCourseUseCase {
         },
         private price: string,
         private modules: CourseModuleProps[],
+        private info: CourseInfoProps,
         private id?: string
     ) {}
 
@@ -22,7 +23,8 @@ export class CreateCourseUseCase {
             category: this.category,
             author: this.author,
             price: this.price,
-            modules: this.modules
+            modules: this.modules,
+            info: this.info
         });
     }
 }
