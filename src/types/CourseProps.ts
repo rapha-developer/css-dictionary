@@ -11,6 +11,7 @@ export type CourseProps = {
         gravatar: string
     }
     price: string
+    info: CourseInfoProps
 }
 export type CourseModuleProps = {
     id?: string
