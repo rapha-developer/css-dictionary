@@ -12,7 +12,7 @@ export const CourseModules = ({ courseID, heading, modules }: CourseModulesProps
 
     return (
         <div className="pt-4">
-            <h3 className="w-full bg-borderLine font-outfit text-xl font-medium text-secondary py-4 px-6 leading-tight flex items-center justify-between cursor-pointer rounded-md accordion-btn">
+            <h3 className="w-full bg-primary font-outfit text-xl font-medium text-white py-4 px-6 leading-tight flex items-center justify-between cursor-pointer rounded-md accordion-btn">
                 <span className="accordion-title capitalize">{heading}</span>
                 <span className="accordion-lesson capitalize">{numberLessons}</span>
             </h3>
