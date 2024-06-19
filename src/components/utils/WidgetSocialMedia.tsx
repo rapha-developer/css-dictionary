@@ -12,7 +12,8 @@ export const WidgetSocialMedia = () => {
             {Array.isArray(items) &&
             items.length > 0 &&
             items.map((item) => (
-                <WidgetSocialMediaItem 
+                <WidgetSocialMediaItem
+                    key={item.id}
                     heading={item.heading}
                     description={item.description}
                     iconName={item.iconName}
