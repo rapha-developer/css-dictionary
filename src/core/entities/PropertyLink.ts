@@ -4,23 +4,23 @@ export class PropertyLink {
     private _id: string
     private _name: string
     private _courseID: string
-    private _propertyID: string
+    private _moduleID: string
 
     constructor({
         id,
         name,
         courseID,
-        propertyID
+        moduleID
     }: {
         id?: string
         name: string
         courseID: string
-        propertyID:  string
+        moduleID:  string
     }) {
         this._id = id ?? uuidV4()
         this._name = name
         this._courseID = courseID
-        this._propertyID = propertyID
+        this._moduleID = moduleID
     }
 
     public get id(): string {
@@ -31,8 +31,8 @@ export class PropertyLink {
         return this._name
     }
 
-    public get propertyID(): string {
-        return this._propertyID
+    public get moduleID(): string {
+        return this._moduleID
     }
 
     public get courseID(): string {
@@ -41,12 +41,12 @@ export class PropertyLink {
     propertyLinkViewModel(): {
         courseID: string
         name: string
-        propertyID: string
+        moduleID: string
     }{
         return {
             courseID: this._courseID,
             name: this._name,
-            propertyID: this._propertyID
+            moduleID: this._moduleID
         }
     }
 }
