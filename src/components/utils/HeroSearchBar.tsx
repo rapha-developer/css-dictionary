@@ -6,6 +6,7 @@ import { MagnifyGlassIcon } from "../../assets/icons/MagnifyGlassIcon"
 import { PropertyLink } from "../../core/entities/PropertyLink"
 import { ArrowLongRight } from "../../assets/icons/ArrowLongRight"
 import { NavLink } from "react-router-dom"
+import { PropertyViewModel } from "../../view-models/PropertyViewModel"
 
 
 export const HeroSearchBar = () => {
@@ -64,11 +65,12 @@ export const AutocompleteResponseItem = ({ item, itemKey }: { item: PropertyLink
     const [controllerData] = useAtom(controllerAtom)
     const courseFounded = controllerData.listCourses().find((course) => course.id === item.courseID)
     const moduleFounded = courseFounded?.modules.find((module) => module.id === item.moduleID)
+    const propertyViewModel = (moduleFounded?.property) ? PropertyViewModel.viewProperty(moduleFounded?.property) : {}
     return (
         <li className={(itemKey === 0) ? `bg-inherit py-[7px] px-5 overflow-hidden group`: `bg-inherit py-[7px] mx-5 overflow-hidden group border-t-[1px] border-borderLine`} 
             key={`autocomplete-${itemKey}`}>
             <NavLink to={`/courses/${item.courseID}/modules/${item.moduleID}`} 
-            state={{"property": moduleFounded?.property}}
+            state={{"property": propertyViewModel}}
             className="font-outfit text-sm font-normal text-secondary group-hover:text-primary capitalize flex gap-2">
                 {item.name}
                 <span className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center">
