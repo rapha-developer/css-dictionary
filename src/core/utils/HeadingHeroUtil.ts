@@ -61,11 +61,21 @@ export type repositoryHeadingHeroProps = {
 export const repositoryHeadingHeroUtils: repositoryHeadingHeroProps = {
     homeCourses: (new HeadingHeroUtil(
         {
-            subtitle: "featured courses",
-            title: "find yours from the featured",
+            subtitle: "cursos em destaque",
+            title: "Encontre seu curso preferido",
             description: {
-                head: "When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen",
-                body: "Book It Has Survived Not Only Five Centuries"
+                head: "Cada curso contém vários módulos, mostrando cada propriedade CSS detalhadamente.",
+                body: "Cada propriedade contém definição, valores e exemplos"
+            }
+        }
+    )).headingHeroViewModel(),
+    coursesListHero: (new HeadingHeroUtil(
+        {
+            subtitle: "cursos em destaque",
+            title: "encontre seu curso na lista",
+            description: {
+                head: "Cada curso possui uma certa quantidade de módulos, demonstrando cada propriedade CSS.",
+                body: "Cada propriedade contém definição, valores e exemplos"
             }
         }
     )).headingHeroViewModel()
