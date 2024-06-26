@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { GlossaryTermProps } from "../../types/GlossaryProps"
 import { ArrowLongLeft } from "../../assets/icons/ArrowLongLeft"
 import { Hero404 } from "../utils/Hero404"
+import { Footer } from "../footer/Footer"
 
 export const TermPage = () => {
     const navigate = useNavigate()
@@ -64,6 +65,7 @@ export const TermPage = () => {
             {!termExist &&
             <Hero404 />
             }
+            <Footer />
         </div>
     )
 }

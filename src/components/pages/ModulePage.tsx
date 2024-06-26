@@ -4,6 +4,7 @@ import { PropertyProps } from "../../types/PropertyProps";
 import { useEffect, useState } from "react";
 import { PropertyBody } from "../sections/PropertyBody";
 import { Hero404 } from "../utils/Hero404";
+import { Footer } from "../footer/Footer";
 
 export const ModulePage = () => {
     const navigate = useNavigate()
@@ -37,6 +38,7 @@ export const ModulePage = () => {
             {!propertyExist &&
             <Hero404 />
             }
+            <Footer />
         </div>
     )
 }

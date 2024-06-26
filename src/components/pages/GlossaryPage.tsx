@@ -3,6 +3,7 @@ import { Header } from "../header"
 import { GlossaryHero } from "../sections/GlossaryHero"
 import { glossaryControllerAtom } from "../../atoms/glossary"
 import { GlossaryViewModel } from "../../view-models/GlossaryViewModel"
+import { Footer } from "../footer/Footer"
 
 export const GlossaryPage = () => {
     const [glossaryControllerData] = useAtom(glossaryControllerAtom)
@@ -26,6 +27,7 @@ export const GlossaryPage = () => {
             ))
             }
             </div>
+            <Footer />
         </div>
     )
 }

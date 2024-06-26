@@ -1,3 +1,4 @@
+import { Footer } from "../footer/Footer"
 import { Header } from "../header"
 import { HeadingHero } from "../utils/HeadingHero"
 import { WidgetSocialMedia } from "../utils/WidgetSocialMedia"
@@ -45,6 +46,7 @@ export const AboutPage = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </div>
     )
 }

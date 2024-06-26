@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { CoursesInfo } from "../sections/CoursesInfo"
 import { Header } from "../header"
 import { Hero404 } from "../utils/Hero404"
+import { Footer } from "../footer/Footer"
 
 export const CoursePage = () => {
     const navigate = useNavigate()
@@ -39,6 +40,7 @@ export const CoursePage = () => {
             {!courseExist &&
             <Hero404 />
             }
+            <Footer />
         </div>
     )
 }
