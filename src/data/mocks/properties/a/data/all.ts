@@ -1,7 +1,6 @@
-import { PropertyProps } from "../../../../types/PropertyProps";
+import { PropertyProps } from "../../../../../types/PropertyProps";
 
-
-export const all: PropertyProps = {
+export const allData: PropertyProps = {
     name: "all",
     definition: "A propriedade all redefine todas as propriedades, exceto unicode-bidi e direção, para seus valores iniciais ou herdados.",
     category: "css property",
@@ -17,38 +16,36 @@ export const all: PropertyProps = {
         {
             name: 'unset',
             value: 'Altera todas as propriedades aplicadas ao elemento ou ao elemento pai para seu valor pai se forem herdáveis ​​ou para seu valor inicial se não forem'
-        }
+        },
+        {
+            name: 'revert',
+            value: 'Especifica o comportamento que depende da origem da folha de estilo à qual pertence a declaração: Leia mais em https://developer.mozilla.org/en-US/docs/Web/CSS/all'
+        },
+        {
+            name: 'revert-layer',
+            value: 'Especifica que todas as propriedades do elemento devem reverter a cascata para uma camada de cascata anterior, se houver uma. Leia mais no link abaixo.'
+        },
     ],
     examples: [
         {
             name: "initial",
-            code: `<p class="font-outfit text-lg text-secondary bg-yellow-200 allExample1">Fist example</p>
-            <style>
-                .allExample1 {
-                    all: initial
-                }
-            </style>
-            `
+            code: `initial`
         },
         {
             name: "inherit",
-            code: `<p class="font-outfit text-lg text-secondary bg-yellow-200 allExample2">Fist example</p>
-            <style>
-                .allExample2 {
-                    all: inherit;
-                }
-            </style>
-            `
+            code: `inherit`
         },
         {
             name: "unset",
-            code: `<p class="font-outfit text-lg text-secondary bg-yellow-200 allExample3">Fist example</p>
-            <style>
-                .allExample3 {
-                    all: unset;
-                }
-            </style>
-            `
+            code: `unset`
+        },
+        {
+            name: "revert",
+            code: `revert`
+        },
+        {
+            name: "revert-layer",
+            code: `revert-layer`
         }, 
     ]
 }
