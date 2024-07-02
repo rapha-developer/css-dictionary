@@ -2,7 +2,7 @@ import { Suspense, lazy,  useState } from "react"
 import { PropertyProps } from "../../types/PropertyProps"
 
 export const PropertyBodyExamples = ({ name, examples }: { name: string, examples: PropertyProps['examples']}) => {
-    
+
     const [values, setValues] = useState(generateValuesItemFromExamples(examples))
     function handleChange(name: string) {
         setValues((prevValues) => prevValues.map((prevItem) => {
@@ -13,6 +13,7 @@ export const PropertyBodyExamples = ({ name, examples }: { name: string, example
     }  
     const lazyParams = generateParamsForLazyRoute(name)
     const PropertyPreview = lazy(() => import(`../../data/mocks/properties/${lazyParams.directory}/${lazyParams.name}.tsx`))
+    const propertyNameForPreview = name.replace(' ', '-')
     return (
         <div className="w-full h-auto">
             <div className="flex flex-col md:flex-row h-auto">
@@ -37,7 +38,10 @@ export const PropertyBodyExamples = ({ name, examples }: { name: string, example
                 </ul>
                 <div className="w-full flex items-center justify-center border border-borderLine py-4 md:py-0">
                     <Suspense fallback={`/loading.gif`}>
-                        <PropertyPreview property={(values.find((value) => value.isActive === true ))?.code} />
+                        <PropertyPreview
+                            name={propertyNameForPreview}
+                            value={(values.find((value) => value.isActive === true ))?.code} 
+                        />
                     </Suspense>
                 </div>
             </div>
