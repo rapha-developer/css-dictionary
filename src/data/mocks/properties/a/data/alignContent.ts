@@ -1,4 +1,5 @@
 import { PropertyProps } from "../../../../../types/PropertyProps";
+import { genericPropertyExamplesData, genericPropertyValuesData } from "../../../GenericPropertyAtributes";
 
 export const alignContentData: PropertyProps = {
     name: "align content",
@@ -33,14 +34,8 @@ export const alignContentData: PropertyProps = {
             name: 'space-evenly',
             value: 'As linhas são distribuídas uniformemente no flex container, com espaço igual ao seu redor'
         },
-        {
-            name: 'initial',
-            value: 'Define esta propriedade com seu valor padrão. Leia sobre valor padrão no glossário.'
-        },
-        {
-            name: 'inherit',
-            value: 'Herda esta propriedade para seu elemento parent. Leia sobre herança no glossário.'
-        }
+        genericPropertyValuesData.initial,
+        genericPropertyValuesData.inherit
     ],
     examples: [
         {
@@ -71,13 +66,7 @@ export const alignContentData: PropertyProps = {
             name: "space-evenly",
             code: `space-evenly`
         },
-        {
-            name: "initial",
-            code: `initial`
-        },
-        {
-            name: "inherit",
-            code: `inherit`
-        },
+        genericPropertyExamplesData.initial,
+        genericPropertyExamplesData.inherit
     ]
 }

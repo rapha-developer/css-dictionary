@@ -1,4 +1,5 @@
 import { PropertyProps } from "../../../../../types/PropertyProps";
+import { genericPropertyExamplesData, genericPropertyValuesData } from "../../../GenericPropertyAtributes";
 
 export const animationDurationData: PropertyProps = {
     name: "animation duration",
@@ -9,14 +10,8 @@ export const animationDurationData: PropertyProps = {
             name: "tempo",
             value: "Especifica quanto tempo uma animação deve levar para completar um ciclo. Isso pode ser especificado em segundos ou milissegundos. O valor padrão é 0, o que significa que nenhuma animação ocorrerá"
         },
-        {
-            name: "initial",
-            value: "Define esta propriedade com seu valor padrão. Leia sobre initial no glossário"
-        },
-        {
-            name: "inherit",
-            value: "Herda esta propriedade de seu elemento pai. Leia sobre inherit no glossário"
-        }
+        genericPropertyValuesData.initial,
+        genericPropertyValuesData.inherit
     ],
     examples: [
         {
@@ -31,13 +26,7 @@ export const animationDurationData: PropertyProps = {
             name: "3s - três segundos",
             code: "3s"
         },
-        {
-            name: "initial",
-            code: "initial"
-        },
-        {
-            name: "inherit",
-            code: "inherit"
-        }
+        genericPropertyExamplesData.initial,
+        genericPropertyExamplesData.inherit
     ]
 }

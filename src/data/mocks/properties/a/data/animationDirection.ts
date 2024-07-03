@@ -1,4 +1,5 @@
 import { PropertyProps } from "../../../../../types/PropertyProps";
+import { genericPropertyExamplesData, genericPropertyValuesData } from "../../../GenericPropertyAtributes";
 
 export const animationDirectionData: PropertyProps = {
     name: "animation direction",
@@ -21,14 +22,8 @@ export const animationDirectionData: PropertyProps = {
             name: "alternate-reverse",
             value: "A animação é reproduzida primeiro para trás e depois para frente"
         },
-        {
-            name: "initial",
-            value: "Define esta propriedade com seu valor padrão. Leia sobre initial no glossário"
-        },
-        {
-            name: "inherit",
-            value: "Herda esta propriedade de seu elemento pai. Leia sobre inherit no glossário"
-        }
+        genericPropertyValuesData.initial,
+        genericPropertyValuesData.inherit
     ],
     examples: [
         {
@@ -47,13 +42,7 @@ export const animationDirectionData: PropertyProps = {
             name: "alternate-reverse",
             code: "alternate-reverse"
         },
-        {
-            name: "initial",
-            code: "initial"
-        },
-        {
-            name: "inherit",
-            code: "inherit"
-        },
+        genericPropertyExamplesData.initial,
+        genericPropertyExamplesData.inherit
     ]
 }

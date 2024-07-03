@@ -1,4 +1,5 @@
 import { PropertyProps } from "../../../../../types/PropertyProps";
+import { genericPropertyExamplesData, genericPropertyValuesData } from "../../../GenericPropertyAtributes";
 
 export const alignItemsData: PropertyProps = {
     name: "align items",
@@ -37,14 +38,8 @@ export const alignItemsData: PropertyProps = {
             name: "baseline",
             value: "Os itens são posicionados na linha de base do contêiner"
         },
-        {
-            name: "initial",
-            value: "Define esta propriedade com seu valor padrão. Leia sobre inicial"
-        },
-        {
-            name: "inherit",
-            value: "Herda esta propriedade de seu elemento pai. Leia sobre herdar"
-        },
+        genericPropertyValuesData.initial,
+        genericPropertyValuesData.inherit
     ],
     examples: [
         {
@@ -71,13 +66,7 @@ export const alignItemsData: PropertyProps = {
             name: "baseline",
             code: `baseline`
         },
-        {
-            name: "initial",
-            code: `initial`
-        },
-        {
-            name: "inherit",
-            code: `inherit`
-        },
+        genericPropertyExamplesData.initial,
+        genericPropertyExamplesData.inherit
     ]
 } 
