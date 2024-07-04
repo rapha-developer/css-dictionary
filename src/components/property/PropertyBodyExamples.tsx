@@ -17,11 +17,11 @@ export const PropertyBodyExamples = ({ name, examples }: { name: string, example
     return (
         <div className="w-full h-auto">
             <div className="flex flex-col md:flex-row h-auto">
-                <ul className="flex flex-row flex-wrap justify-center md:justify-normal md:flex-col gap-4 bg-white border border-borderLine p-4">
+                <ul className="flex flex-row flex-wrap justify-center md:justify-normal md:flex-col gap-4 bg-white border border-borderLine p-4 w-auto">
                     {Array.isArray(values) &&
                     values.length > 0 &&
                     values.map((value) => (
-                        <li className="flex-item font-outfit text-sm text-secondary py-4 px-5 bg-borderLine rounded-md text-center flex items-center justify-center gap-2"
+                        <li className="flex-item font-outfit text-sm text-secondary py-4 px-5 bg-borderLine rounded-md text-center flex items-center justify-center md:justify-start min-w-40 gap-2"
                             key={value.id}>
                             <input type="checkbox" 
                                 id={value.name} 
@@ -31,7 +31,7 @@ export const PropertyBodyExamples = ({ name, examples }: { name: string, example
                                 checked={value.isActive} 
                                 onChange={() => handleChange(value.name)}
                                 />
-                            <label htmlFor={value.name}>{value.name}</label>
+                            <label htmlFor={value.name} className="text-start">{value.name}</label>
                         </li>
                     ))
                     }
