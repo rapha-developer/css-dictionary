@@ -19,7 +19,7 @@ export const animationIterationCountData: PropertyProps = {
     ],
     examples: [
         {
-            name: "apenas uma vez",
+            name: "uma vez",
             code: "1"
         },
         {
