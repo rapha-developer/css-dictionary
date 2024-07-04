@@ -49,8 +49,8 @@ export const CourseInfoBody = ({ heading, info }: CourseHeroBodyProps) => {
     return (
         <div className="flex flex-col gap-[10px] pt-2">
             <h2 className="font-outfit font-semibold text-[28px] text-secondary leading-10">{heading}</h2>
-            <p className="font-outfit text-base font-normal text-body-100 leading-7 mb-4 capitalize">{info.body.first}</p>
-            <p className="font-outfit text-base font-normal text-body-100 leading-7 mb-1 capitalize">{info.body.second}</p>
+            <p className="font-outfit text-base font-normal text-body-100 leading-7 mb-4">{info.body.first}</p>
+            <p className="font-outfit text-base font-normal text-body-100 leading-7 mb-1">{info.body.second}</p>
         </div>
     )
 }
@@ -59,7 +59,7 @@ export const CourseInfoCurriculum = ({ heading, description }: { heading: string
     return (
         <div className="flex flex-col gap-[10px] pt-8">
             <h2 className="font-outfit font-semibold text-[28px] text-secondary leading-10">{heading}</h2>
-            <p className="font-outfit text-base font-normal text-body-100 leading-7 mb-5 capitalize">{description}</p>
+            <p className="font-outfit text-base font-normal text-body-100 leading-7 mb-5">{description}</p>
         </div>
     )
 }

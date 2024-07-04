@@ -15,7 +15,7 @@ export const CourseHero = ({ category, courseName, resume, author, lastUpdate }:
                 {category}
             </span>
             <h1 className="font-outfit text-3xl sm:text-4xl font-semibold text-secondary capitalize">{courseName}</h1>
-            <p className="font-outfit text-base font-normal leading-7 text-body-100 capitalize">{resume}</p>
+            <p className="font-outfit text-base font-normal leading-7 text-body-100">{resume}</p>
             <div className="flex flex-col md:flex-row gap-5 md:gap-3 md:items-center pt-3">
                 <CourseHeroAuthor 
                     gravatar={author.gravatar}
