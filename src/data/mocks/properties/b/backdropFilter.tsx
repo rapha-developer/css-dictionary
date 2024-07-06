@@ -2,7 +2,7 @@ import { CopyAndPasteTemplate } from "../../../../components/example/CopyAndPast
 import { InheritTemplate } from "../../../../components/example/InheritTemplate";
 import { PropertyTemplateProps } from "../../../../types/PropertyTemplateProps";
 
-export default function backdropFilterTemplate({ name, value }: PropertyTemplateProps['property']) {
+export default function BackdropFilterTemplate({ name, value }: PropertyTemplateProps['property']) {
     const inheritValue = `none`
     return (
         <div className="flex flex-col gap-4 px-4 w-full">
