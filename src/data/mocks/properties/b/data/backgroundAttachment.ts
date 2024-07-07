@@ -1,4 +1,5 @@
 import { PropertyProps } from "../../../../../types/PropertyProps";
+import { genericPropertyExamplesData, genericPropertyValuesData } from "../../../GenericPropertyAtributes";
 
 export const backgroundAttachmentData: PropertyProps = {
     name: "background attachment",
@@ -17,6 +18,8 @@ export const backgroundAttachmentData: PropertyProps = {
             name: "local",
             value: "A imagem de fundo irá rolar com o conteúdo do elemento"
         },
+        genericPropertyValuesData.initial,
+        genericPropertyValuesData.inherit
     ],
     examples: [
         {
@@ -31,5 +34,7 @@ export const backgroundAttachmentData: PropertyProps = {
             name: "local",
             code: "local"
         },
+        genericPropertyExamplesData.initial,
+        genericPropertyExamplesData.inherit
     ]
 }
