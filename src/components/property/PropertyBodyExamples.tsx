@@ -1,5 +1,6 @@
 import { Suspense, lazy,  useState } from "react"
 import { PropertyProps } from "../../types/PropertyProps"
+import { LoadingUtil } from "../utils/Loading"
 
 export const PropertyBodyExamples = ({ name, examples }: { name: string, examples: PropertyProps['examples']}) => {
 
@@ -37,7 +38,7 @@ export const PropertyBodyExamples = ({ name, examples }: { name: string, example
                     }
                 </ul>
                 <div className="w-full flex items-center justify-center border border-borderLine py-4 md:py-0">
-                    <Suspense fallback={`/loading.gif`}>
+                    <Suspense fallback={<LoadingUtil />}>
                         <PropertyPreview
                             name={propertyNameForPreview}
                             value={(values.find((value) => value.isActive === true ))?.code} 
