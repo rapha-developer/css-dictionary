@@ -24,7 +24,7 @@ export default function BorderBlockTemplate({ name, value }: PropertyTemplatePro
                 name={name}
                 value={value}
             />
-            <button className={`${writeClass} bg-primary text-sm font-medium font-outfit text-white rounded-md py-4 px-6 inset-1`}
+            <button className={`${writeClass} bg-primary text-sm font-medium font-outfit text-white rounded-md py-4 px-6 active:shadow-[inset_10px_10px_20px_-6px_rgba(0,0,0,0.7)]`}
             onClick={changeWritingMode}>
                 Clique para mudar o writing-mode
             </button>
