@@ -3,7 +3,7 @@ import { genericPropertyExamplesData, genericPropertyValuesData } from "../../..
 
 export const borderStartEndRadiusData: PropertyProps = {
     name: "border start end radius",
-    definition: "A propriedade border-start-end-radius define o raio do canto entre o block-start e os inline-end do elemento. As direções do bloco e inline dependem das propriedades (writing-mode, text-orientation & direction)",
+    definition: "A propriedade border-start-end-radius define o raio do canto entre o block-start e o inline-end do elemento. As direções do bloco e inline dependem das propriedades (writing-mode, text-orientation & direction)",
     category: "css property",
     values: [
         {
