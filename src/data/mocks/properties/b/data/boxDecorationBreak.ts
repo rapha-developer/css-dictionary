@@ -1,7 +1,7 @@
 import { PropertyProps } from "../../../../../types/PropertyProps";
 import { genericPropertyExamplesData, genericPropertyValuesData } from "../../../GenericPropertyAtributes";
 
-export const boxDecorationBreak: PropertyProps = {
+export const boxDecorationBreakData: PropertyProps = {
     name: "box decoration break",
     definition: "A propriedade box-decoration-break especifica como o plano de fundo, o preenchimento, a borda, a imagem da borda, a sombra da caixa, a margem e o caminho de recorte de um elemento são aplicados.",
     category: "css property",
