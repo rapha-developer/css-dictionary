@@ -12,7 +12,7 @@ export const columnGapData: PropertyProps = {
         },
         {
             name: "normal",
-            value: "Valor padrão. Especifica um espaço normal entre as colunas. O W3C sugere um valor de 1em"
+            value: "Valor padrão. Especifica um espaço normal entre as colunas."
         },
         genericPropertyValuesData.initial,
         genericPropertyValuesData.inherit
