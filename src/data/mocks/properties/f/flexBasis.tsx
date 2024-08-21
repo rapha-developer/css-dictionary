@@ -2,7 +2,7 @@ import { CopyAndPasteTemplate } from "../../../../components/example/CopyAndPast
 import { InheritTemplate } from "../../../../components/example/InheritTemplate"
 import { PropertyTemplateProps } from "../../../../types/PropertyTemplateProps"
 
-export default function FlexTemplate({ name, value }: PropertyTemplateProps['property']) {
+export default function FlexBasisTemplate({ name, value }: PropertyTemplateProps['property']) {
     const inheritValue = `40%`
     return (
         <div className="flex flex-col gap-4 px-4 py-6 w-full relative">
