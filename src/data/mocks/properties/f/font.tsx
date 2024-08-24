@@ -2,7 +2,7 @@ import { CopyAndPasteTemplate } from "../../../../components/example/CopyAndPast
 import { InheritTemplate } from "../../../../components/example/InheritTemplate"
 import { PropertyTemplateProps } from "../../../../types/PropertyTemplateProps"
 
-export default function FloatTemplate({ name, value }: PropertyTemplateProps['property']) {
+export default function FontTemplate({ name, value }: PropertyTemplateProps['property']) {
     const inheritValue = `18px sans-serif`
     return (
         <div className="flex flex-col gap-4 px-4 py-6 w-full">
