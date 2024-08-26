@@ -1,0 +1,7 @@
+@font-face {
+    src: url('/src/assets/fonts/LeagueMono-VF.ttf') format('truetype');
+    font-family: League;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 50% 200%
+}
