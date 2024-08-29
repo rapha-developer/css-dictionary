@@ -1,8 +1,12 @@
+import { useEffect } from "react"
 import { Footer } from "../footer/Footer"
 import { Header } from "../header"
 import { CoursesListHero } from "../sections/CoursesListHero"
 
 export const CourseListPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div className="">
             <Header />

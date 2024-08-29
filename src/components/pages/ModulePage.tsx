@@ -13,6 +13,7 @@ export const ModulePage = () => {
     const propertyExist = (propertyState) ? true : false
 
     useEffect(() => {
+        window.scrollTo(0, 0)
         setTimeout(() => {
             if(!propertyState) {
                 return navigate("/")

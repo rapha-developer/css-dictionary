@@ -13,6 +13,7 @@ export const CoursePage = () => {
     const courseExist = (courseState?.name) ? true : false
     
     useEffect(() => {
+        window.scrollTo(0, 0)
         setTimeout(() => {
             if(!courseState) {
                 return navigate("/")

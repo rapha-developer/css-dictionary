@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { Footer } from "../footer/Footer"
 import { Header } from "../header"
 import { HomeCourses } from "../sections/HomeCourses"
@@ -7,6 +8,9 @@ import { HomeInstructor } from "../sections/HomeInstructor"
 import { WidgetCallToAction } from "../utils/WidgetCallToAction"
 
 export const HomePage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div className="homepage">
             <Header />
