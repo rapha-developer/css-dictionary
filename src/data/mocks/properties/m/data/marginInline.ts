@@ -12,7 +12,7 @@ export const marginInlineData: PropertyProps = {
         },
         {
             name: "length",
-            value: "Especifica margin-inline em px, pt, cm, etc. Valores negativos são permitidos. Leia sobre unidades de comprimento."
+            value: "Especifica margin-inline em px, pt, cm, etc. Valores negativos são permitidos. Leia sobre unidades de comprimento no glossário."
         },
         {
             name: "%",
