@@ -4,7 +4,7 @@ import { PropertyTemplateProps } from "../../../../types/PropertyTemplateProps"
 
 export default function maxInlineSizeTemplate({ name, value }: PropertyTemplateProps['property']) {
     const inheritValue = `auto`
-    const text = 'Diferentes valores para diferentes max-block-size'
+    const text = 'Diferentes valores para diferentes max-inline-size'
     return (
         <div className="flex flex-col gap-4 px-4 py-6 w-full">
             <div className="w-full h-full" style={{maxInlineSize: inheritValue}}>
