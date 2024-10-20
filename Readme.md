@@ -35,7 +35,7 @@
     <a href="#student-why">Why (por que?)</a> &nbsp;|&nbsp;
     <a href="#rocket-demo">Demo</a> &nbsp;|&nbsp;
     <a href="#desktop_computer-to-use">How to use? (Como usar)</a> &nbsp;|&nbsp;
-    <a href="#zap-css-dictionary">About CSS Dictionary</a> &nbsp;|&nbsp;  
+    <a href="#zap-about-css-dictionary">About CSS Dictionary</a> &nbsp;|&nbsp;  
     <a href="#hammer_and_pick-features">Features</a> &nbsp;|&nbsp;  
     <a href="#pencil-license">License</a> 
 </p>
@@ -113,15 +113,6 @@
 
 <p align="left">The css dictionary application allows you to search and list several basic css properties for those who want to enter the world of programming through the css styling language. Among these are: a, background, color, display, height, emptyCells, flex, gap, height, inset, justify-content, line-height & margin.</p>
 <p align="left">A aplicação dicionário css permite a pesquisa e lista diversas propriedades css básicas para quem deseja adrentar ao mundo da programação através da linguagem de estilização css. Dentre essas estão: a, background, color, display, height, emptyCells, flex, gap, height, inset, justify-content, line-height & margin.</p>
-<br />
-
-## :hammer_and_pick: **Features**
-
-<dl>
-  <dd>:white_check_mark: Access the demo and choose from the 4 themes available for you to play right now.<br />
-    ( <i>Acesse a demo e escolha dentre as 4 temas disponíveis para você jogar agora mesmo!</i> )</dd>
-  <dd>:white_check_mark: Once the game has started, find the 4 secret groups by simply clicking on 4 different random words on your screen. <br />( <i>Uma vez o jogo iniciado, encontre os 4 grupos secretos apenas clicando em 4 diferentes palavras aleatórias na sua tela.!</i> )</dd>
-</dl>
 <br />
 
 ## :hammer_and_pick: **Features**
