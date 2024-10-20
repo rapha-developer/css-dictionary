@@ -24,7 +24,7 @@ export const GlossaryHero = ({ name, terms }: GlossaryProps) => {
                             const id = `${term.name}-${key}`
                             return (
                                 <NavLink to={`/glossary/${term.name}`} state={{"term": term}} key={id}>
-                                    <li className="bg-grey-400 py-8 px-8 rounded-[10px] hover:bg-primary flex flex-col gap-4 group h-auto">
+                                    <li className="bg-grey-400 py-8 px-8 rounded-[10px] hover:bg-primary flex flex-col items-center gap-4 group h-auto">
                                         <div className={`bg-icon-widget bg-icon-widget-${colors[makeColorIDBelowFive(key)]} rounded-full flex items-center justify-center box-shadow-widget-icon`}>
                                             <DocumentIcon 
                                                 classNames="w-8 h-8 text-white"
