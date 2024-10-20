@@ -11,14 +11,15 @@ export const TermPage = () => {
     const { state } = useLocation()
     const [glossaryTerm] = useState<GlossaryTermProps>(state?.term)
     const termExist = (glossaryTerm?.name) ? true : false
-
+    
     useEffect(() => {
+        window.scrollTo(0, 0)
         setTimeout(() => {
             if(!glossaryTerm) {
                 return navigate("/glossary")
             }
         }, 5000);
-    }, [glossaryTerm, navigate])
+    }, [glossaryTerm])
     return (
         <div className="">
             <Header />
@@ -41,23 +42,25 @@ export const TermPage = () => {
                             <p className="font-outfit text-base font-normal leading-8 text-body-100 text-center mb-10">
                                 {glossaryTerm.definition}
                             </p>
-                            <h2 className="font-outfit text-3xl font-semibold text-secondary border-b border-solid border-borderLine text-center capitalize w-full pb-4">
-                                {`referências`}
-                            </h2>
-                            <ul className="flex flex-col gap-4 w-full">
                             {Array.isArray(glossaryTerm.references) &&
                             glossaryTerm.references.length > 0 && 
-                            glossaryTerm.references.map((reference) => (
-                                <li className="reference-item" key={reference.name}>
-                                    <a href={reference.url} 
-                                        target="_blank"
-                                        className="font-outfit text-base font-bold text-secondary hover:underline hover:text-primary flex items-center gap-3">
-                                            <span className="block h-3 w-8 bg-primary rounded-lg"></span>{`O que é `}{reference.name}
-                                        </a>
-                                </li>
-                            ))
+                            <div className="w-full">
+                                <h2 className="font-outfit text-3xl font-semibold text-secondary border-b border-solid border-borderLine text-center capitalize w-full pb-4">
+                                    {`referências`}
+                                </h2>
+                                <ul className="flex flex-col gap-4 w-full">
+                                    {glossaryTerm.references.map((reference) => (
+                                        <li className="reference-item" key={reference.name}>
+                                            <a href={reference.url} 
+                                                target="_blank"
+                                                className="font-outfit text-base font-bold text-secondary hover:underline hover:text-primary flex items-center gap-3">
+                                                    <span className="block h-3 w-8 bg-primary rounded-lg"></span>{`O que é `}{reference.name}
+                                                </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                             }
-                            </ul>
                         </div>
                     </div>
                 </section>
