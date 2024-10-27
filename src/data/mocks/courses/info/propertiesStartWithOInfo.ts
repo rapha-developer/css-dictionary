@@ -1,7 +1,7 @@
 import { CourseInfoProps } from "../../../../types/CourseProps";
 
 export const propertiesStartWithOCourseInfo: CourseInfoProps = {
-    resume: "Neste curso, você aprenderá 11 propriedades css que começa com a letra O através de vários exemplos. Aumente seus conhecimentos na área de desenvolvimento web dentro da linguagem css",
+    resume: "Neste curso, você aprenderá 12 propriedades css que começa com a letra O através de vários exemplos. Aumente seus conhecimentos na área de desenvolvimento web dentro da linguagem css",
     body: {
         first: "Dentre as propriedades que você aprenderá estão: object-fit, object-position, offset-position, opacity, order, outline, outline-offset, overflow, overflow-anchor, overflow-wrap, overflow-x & overflow-y.",
         second: "Cada propriedade css contém um nome, uma nítida e detalhada definição do que faz, como também os valores de entrada formalmente aceitos pela linguagem de estilização CSS. Além de númerosos exemplos que buscam esclarecer o que cada valor realmente executa dentro de uma aplicação web."
