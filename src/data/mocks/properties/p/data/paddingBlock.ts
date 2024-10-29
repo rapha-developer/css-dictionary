@@ -7,12 +7,16 @@ export const paddingBlockData: PropertyProps = {
     category: "css property",
     values: [
         {
+            name: "auto",
+            value: "Padrão. Valor padrão do bloco de preenchimento do elemento."
+        },
+        {
             name: "length",
-            value: "Especifica o preenchimento (padding) em px, pt, cm, etc. O valor padrão é 0. Leia sobre unidades de comprimento no glossário."
+            value: "Especifica padding-block em px, pt, cm, etc. Valores negativos não são permitidos. Leia sobre unidades de comprimento no glossário."
         },
         {
             name: "%",
-            value: "Especifica o preenchimento (padding) em porcentagem da largura do elemento que o contém"
+            value: "Especifica o bloco de preenchimento (padding-block) em porcentagem em relação ao tamanho do elemento pai na direção inline."
         },
         {
             name: "Observação:",
