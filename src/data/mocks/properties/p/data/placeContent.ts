@@ -3,7 +3,7 @@ import { genericPropertyExamplesData, genericPropertyValuesData } from "../../..
 
 export const placeContentData: PropertyProps = {
     name: "place content",
-    definition: "A propriedade place-content é usada em layouts de flexbox e grade e é uma propriedade abreviada para as seguintes propriedades: align-content & justify-content.",
+    definition: "A propriedade place-content é usada em layouts de flexbox e grade e é uma propriedade abreviada para as seguintes propriedades: align-content & justify-content. Ou seja, ela especifica os valores das propriedades align-content e justify-content para layouts flexbox e grid",
     category: "css property",
     values: [
         {
@@ -48,7 +48,7 @@ export const placeContentData: PropertyProps = {
         },
         {
             name: "Observação:",
-            value: "Se place-content tiver um valor ➤ place-content: 'end'; ➊ Os valores das propriedadas align-content e justify-content são ambos 'end'"
+            value: "Se place-content tiver um valor ➤ place-content: 'end'; ➊ Os valores das propriedades align-content e justify-content são ambos 'end'"
         },
         genericPropertyValuesData.initial,
         genericPropertyValuesData.inherit
