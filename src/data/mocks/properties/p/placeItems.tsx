@@ -18,12 +18,6 @@ export default function placeItemsTemplate({ name, value }: PropertyTemplateProp
                 <div className="p-5 bg-orange-300 rounded-md font-outfit text-secondary text-xl text-center">6</div>
                 <div className="p-5 bg-orange-300 rounded-md font-outfit text-secondary text-xl text-center">7</div>
                 <div className="p-5 bg-orange-300 rounded-md font-outfit text-secondary text-xl text-center">8</div>
-                {/* <div className="p-5 bg-orange-300 rounded-md font-outfit text-secondary text-xl text-center">9</div>
-                <div className="p-5 bg-orange-300 rounded-md font-outfit text-secondary text-xl text-center">10</div>
-                <div className="p-5 bg-orange-300 rounded-md font-outfit text-secondary text-xl text-center">11</div>
-                <div className="p-5 bg-orange-300 rounded-md font-outfit text-secondary text-xl text-center">12</div>
-                <div className="p-5 bg-orange-300 rounded-md font-outfit text-secondary text-xl text-center">13</div>
-                <div className="p-5 bg-orange-300 rounded-md font-outfit text-secondary text-xl text-center">14</div> */}
             </div>
             <InheritTemplate 
                 inheritValue={inheritValue}
