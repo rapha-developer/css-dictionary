@@ -1,7 +1,7 @@
 import { CourseInfoProps } from "../../../../types/CourseProps";
 
 export const propertiesStartWithRCourseInfo: CourseInfoProps = {
-    resume: "Neste curso, você aprenderá 4 propriedades css que começa com a letra R através de vários exemplos. Aumente seus conhecimentos na área de desenvolvimento web dentro da linguagem css",
+    resume: "Neste curso, você aprenderá 4 propriedades css que começam com a letra R através de vários exemplos. Aumente seus conhecimentos na área de desenvolvimento web dentro da linguagem css",
     body: {
         first: "A propriedade que você aprenderá será resize, right, rotate & row-gap.",
         second: "Cada propriedade css contém um nome, uma nítida e detalhada definição do que faz, como também os valores de entrada formalmente aceitos pela linguagem de estilização CSS. Além de númerosos exemplos que buscam esclarecer o que cada valor realmente executa dentro de uma aplicação web."
