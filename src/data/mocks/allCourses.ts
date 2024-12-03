@@ -16,6 +16,11 @@ import { propertiesThatStartWithP } from "./courses/propertiesThatStartWithP";
 import { propertiesThatStartWithQ } from "./courses/propertiesThatStartWithQ";
 import { propertiesThatStartWithR } from "./courses/propertiesThatStartWithR";
 import { propertiesThatStartWithS } from "./courses/propertiesThatStartWithS";
+import { propertiesThatStartWithT } from "./courses/propertiesThatStartWithT";
+import { propertiesThatStartWithU } from "./courses/propertiesThatStartWithU";
+import { propertiesThatStartWithV } from "./courses/propertiesThatStartWithV";
+import { propertiesThatStartWithW } from "./courses/propertiesThatStartWithW";
+import { propertiesThatStartWithZ } from "./courses/propertiesThatStartWithZ";
 
 type allCoursesProps = {
     course: CourseProps
@@ -71,5 +76,20 @@ export const allCourses: allCoursesProps[]  = [
     },
     {
         course: propertiesThatStartWithS,
+    },
+    {
+        course: propertiesThatStartWithT,
+    },
+    {
+        course: propertiesThatStartWithU
+    },
+    {
+        course: propertiesThatStartWithV
+    },
+    {
+        course: propertiesThatStartWithW
+    },
+    {
+        course: propertiesThatStartWithZ
     },
 ]
